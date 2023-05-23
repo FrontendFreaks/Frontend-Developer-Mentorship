@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backShadow {
+  box-shadow: -10px 10px 0 #6ac9a5;
+}
