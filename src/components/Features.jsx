@@ -10,7 +10,7 @@ const Features = () => {
         Features
       </h1>
       <div className="grid md:grid-cols-3 gap-6 items-start justify-between  ">
-        <div className="px-2 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
           <FaUserGraduate size={40} color="#6557fd" />
           <h1 className="uppercase font-bold text-xl main-heading">Guidance</h1>
           <p className="text-center text-[#767676] ">
@@ -18,7 +18,7 @@ const Features = () => {
             experts across the world
           </p>
         </div>
-        <div className="px-2 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
           <FaVideo size={40} color="#6557fd" />
           <h1 className="uppercase font-bold text-xl main-heading">
             Curated Videos
@@ -28,7 +28,7 @@ const Features = () => {
             to implement it & how to optimise it.
           </p>
         </div>
-        <div className="px-2 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
           <MdAssignment size={40} color="#6557fd" />
           <h1 className="uppercase font-bold text-xl main-heading">
             Assignments
@@ -38,7 +38,7 @@ const Features = () => {
             well.
           </p>
         </div>
-        <div className="px-2 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
+        <div className="px-3  py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
           <FaTools size={40} color="#6557fd" />
           <h1 className="uppercase font-bold text-xl main-heading">
             {" "}
@@ -49,7 +49,7 @@ const Features = () => {
             contributions
           </p>
         </div>
-        <div className="px-2 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
           <MdSpeakerNotes size={40} color="#6557fd" />
           <h1 className="uppercase font-bold text-xl main-heading">Notes</h1>
           <p className="text-center text-[#767676]">
@@ -57,7 +57,7 @@ const Features = () => {
             can focus on learning and practising.
           </p>
         </div>
-        <div className="px-2 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
           <BsPeopleFill size={40} color="#6557fd" />
           <h1 className="uppercase font-bold text-xl main-heading">
             Grow with community

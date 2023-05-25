@@ -18,7 +18,6 @@ const Navbar = () => {
     <div className="flex flex-row px-10 py-5  items-center justify-between   w-full fixed top-0 bg-white">
       <div className="flex flex-row items-center justify-center space-x-2">
         <h3 className="text-3xl font-bold md:text-4xl main-heading ">
-          {" "}
           <span className="text-[#6557fd]">f</span>rontend
           <span className="text-[#6557fd]">f</span>reaks
         </h3>
