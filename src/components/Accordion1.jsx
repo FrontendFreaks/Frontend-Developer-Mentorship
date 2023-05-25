@@ -13,14 +13,14 @@ const Dummy_Questions = [
     question: "What is the maximum file upload size? ",
     answer:
       "No more than 2GB. All files in your account must fit your allotted storage space.",
-    open: false,
+    open: true,
   },
   {
     id: "03",
     question: " How do I reset my password?",
     answer:
       " Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
-    open: true,
+    open: false,
   },
 ];
 const Accordion1 = () => {
@@ -41,7 +41,7 @@ const Accordion1 = () => {
     setQuestions(updatedQuestions);
   }
   return (
-    <div>
+    <div className="flex flex-col items-start justify-between w-[600px] space-y-1 ">
       {questions.map((accordion) => (
         <AccordionElement accordion={accordion} onToggle={mainToggleHandler} />
       ))}

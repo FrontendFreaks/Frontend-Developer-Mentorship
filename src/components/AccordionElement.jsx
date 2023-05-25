@@ -1,35 +1,38 @@
-import React from "react";
-import {
-  MdOutlineKeyboardArrowDown,
-  MdOutlineKeyboardArrowUp,
-} from "react-icons/md";
+import React, { useState } from "react";
+import { BiPlus, BiMinus } from "react-icons/bi";
+
 const AccordionElement = ({ accordion, onToggle }) => {
-  function toogleAcc() {
+  function toggleAcc() {
     onToggle(accordion.id);
   }
+
   return (
-    <div>
-      <div className="flex flex-col items-left border-b border-lighGrayishBlue">
-        <div
-          onClick={toogleAcc}
-          className={`text-darkGrayishBlue flex flex-row items-center justify-between text-md p-2  h-12 cursor-pointer ${
-            accordion.open ? "font-light text-black" : ""
-          }`}
-        >
-          {accordion.question}{" "}
+    <div className="flex flex-col space-x-1 items-start justify-between w-[550px] bg-white">
+      <div
+        onClick={toggleAcc}
+        className={` flex flex-row  items-center justify-between text-md min-w-[550px] h-12 cursor-pointer px-4 py-1 ${
+          accordion.open ? "font-bold " : ""
+        }`}
+      >
+        <p className="text-lg cursor-pointer opacity-80 ">
+          {accordion.question}
+        </p>
+        <div>
           {accordion.open ? (
-            <MdOutlineKeyboardArrowUp />
+            <BiMinus size={30} color="#6557fd" />
           ) : (
-            <MdOutlineKeyboardArrowDown />
+            <BiPlus size={30} color="#6557fd" />
           )}
         </div>
-
-        {accordion.open && (
-          <div className="p-2 scale-in-ver-top text-sm text-veryDarkGrayishBlue">
-            {" "}
-            {accordion.answer}
-          </div>
-        )}
+      </div>
+      <div
+        className={`overflow-hidden transition-all duration-300 ${
+          accordion.open ? "max-h-[1000px]" : "max-h-0"
+        }`}
+      >
+        <div className="scale-in-ver-top text-md py-2 px-3 text-[#767676]">
+          {accordion.answer}
+        </div>
       </div>
     </div>
   );
