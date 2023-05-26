@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import { GoThreeBars } from "react-icons/go";
 import { BsFillRocketFill } from "react-icons/bs";
 const Navbar = () => {
@@ -18,8 +19,10 @@ const Navbar = () => {
     <div className="flex flex-row px-10 py-5  items-center justify-between   w-full fixed top-0 bg-white">
       <div className="flex flex-row items-center justify-center space-x-2">
         <h3 className="text-3xl font-bold md:text-4xl main-heading ">
-          <span className="text-[#6557fd]">f</span>rontend
-          <span className="text-[#6557fd]">f</span>reaks
+          <Link to="/">
+            <span className="text-[#6557fd]">f</span>rontend
+            <span className="text-[#6557fd]">f</span>reaks
+          </Link>
         </h3>
       </div>
       <div className="hidden  md:flex md:flex-row md:items-center md:justify-between md:space-x-6 ">
