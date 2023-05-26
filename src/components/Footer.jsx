@@ -19,13 +19,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center font-bold uppercase">
-        © Copyrights by
-        <span className="text-xl font-bold md:text-xl  mx-2 lowercase main-heading  ">
-          <span className="text-[#6557fd]">f</span>rontend
-          <span className="text-[#6557fd]">f</span>reaks
-        </span>
-      </div>
     </div>
   );
 };

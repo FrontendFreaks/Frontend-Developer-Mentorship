@@ -1,24 +1,22 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import JoinBatches from "./components/JoinBatches";
-import Features from "./components/Features";
-import Accordion from "./components/Accordion";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Learn from "./pages/Learn";
+import LearnHtml from "./pages/HTML/LearnHtml";
+import HTMLAssignment from "./pages/HTML/HTMLAssignment";
 import "./App.css";
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <JoinBatches />
-      <Features />
-      <Accordion />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="learn" element={<Learn />} />
+          <Route path="learn/html" element={<LearnHtml />} />
+          <Route path="learn/html/assignment" element={<HTMLAssignment />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
