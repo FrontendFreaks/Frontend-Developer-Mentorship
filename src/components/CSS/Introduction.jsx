@@ -11,11 +11,11 @@ const Introduction = () => {
   return (
     <div>
       <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
-        <p>HTML</p>
+        <p>CSS</p>
       </h1>{" "}
       <div className="flex flex-row items-start justify-between space-x-4 p-1">
         <div className="md:1/2">
-          <ReactPlayer url="https://youtu.be/EOwWXNBKtBM" controls />
+          <ReactPlayer url="https://youtu.be/Qu0dbQxm6II" controls />
         </div>
         <div className="md:1/2">
           <h1 className=" font-bold text-4xl">Video Highlights</h1>
