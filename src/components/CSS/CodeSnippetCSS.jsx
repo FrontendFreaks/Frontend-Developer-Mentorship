@@ -1,12 +1,12 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { okaidia } from "react-syntax-highlighter/dist/esm/styles/prism";
-const CodeSnippetHtml = ({ heading, code }) => {
+const CodeSnippetCSS = ({ heading, code }) => {
   return (
     <div className="">
-      <h1 className=" font-bold text-2xl">{heading}</h1>
+      <h1 className="  text-2xl">{heading}</h1>
       <SyntaxHighlighter
-        language="html"
+        language="css"
         style={okaidia}
         customStyle={{ fontSize: "16px", lineHeight: 1.5, width: "700px" }}
       >
@@ -16,4 +16,4 @@ const CodeSnippetHtml = ({ heading, code }) => {
   );
 };
 
-export default CodeSnippetHtml;
+export default CodeSnippetCSS;

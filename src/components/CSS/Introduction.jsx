@@ -1,66 +1,44 @@
 import React from "react";
-import ReactPlayer from "react-player";
-import { Link } from "react-router-dom";
+import VideoElement from "./VideoElement";
 const Introduction = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
     <div>
       <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
         <p>CSS</p>
-      </h1>{" "}
-      <div className="flex flex-row items-start justify-between space-x-4 p-1">
-        <div className="md:1/2">
-          <ReactPlayer url="https://youtu.be/Qu0dbQxm6II" controls />
-        </div>
-        <div className="md:1/2">
-          <h1 className=" font-bold text-4xl">Video Highlights</h1>
-          <ol className="flex flex-col items-start justify-between space-y-1 mt-2 ">
-            <li className="text-xl text-[#767676] ">
-              <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
-                1.
-              </span>
-              Set up HTML boilerplate, add a page title, and use Live Server
-              extension for development.
-            </li>
-            <li className="text-xl text-[#767676]">
-              <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
-                2.
-              </span>
-              Learn heading and paragraph tags, line breaks, horizontal lines,
-              formatting text with bold and italic tags, and creating links,
-              lists, tables, and forms in HTML.
-            </li>
-            <li className="text-xl text-[#767676] ">
-              <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
-                3.
-              </span>
-              Explore media embedding, semantic tags, and practice HTML through
-              assignments.
-            </li>
-          </ol>
-          <div className="flex flex-row items-center justify-start space-x-4 mt-7">
-            <Link
-              to="assignment"
-              className="bg-[#6557fd] px-12 py-4  text-white font-bold uppercase"
-              onClick={scrollToTop}
-            >
-              Assignments
-            </Link>
-            <Link
-              to="notes"
-              onClick={scrollToTop}
-              className="text-[#6557fd] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#6557fd] hover:text-white"
-            >
-              Notes
-            </Link>
-          </div>
-        </div>
-      </div>
+      </h1>
+      <VideoElement
+        videoUrl="https://youtu.be/Qu0dbQxm6II"
+        mainPoints={{
+          one: "Introduction to CSS methods, syntax, selectors, values, specificity, fonts, colors, backgrounds, gradients, borders, shapes, box model, and text formatting.",
+          two: "Creating CSS links, customizing appearance, and changing element rendering with the display property.",
+          three:
+            "Positioning elements with CSS using absolute, relative, fixed, and sticky positioning techniques.",
+        }}
+        change={false}
+        notesLink="notes#css"
+      />
+      <VideoElement
+        videoUrl="https://youtu.be/3nLglJtUHjA"
+        mainPoints={{
+          one: "Introduction to CSS Flexbox: Learn the basics of CSS Flexbox for flexible and responsive layouts.",
+          two: "Understanding Flexbox: Explore the display, flex-direction, and flex-wrap properties to control the layout and wrapping behavior.",
+          three:
+            "CSS properties for precise element alignment and sizing: justify-content, align-items, gap, order, flex properties.",
+        }}
+        change={true}
+        notesLink="notes#flexbox"
+      />
+      <VideoElement
+        videoUrl="https://youtu.be/ULp7wPJ-rzQ"
+        mainPoints={{
+          one: "Introduction to CSS Grid and Flexbox comparison",
+          two: "Creating Grid layout with display and grid-template properties",
+          three:
+            "Alignment, spacing, grid lines, areas, and design enhancements with CSS Grid",
+        }}
+        change={false}
+        notesLink="notes#flexbox"
+      />
     </div>
   );
 };
