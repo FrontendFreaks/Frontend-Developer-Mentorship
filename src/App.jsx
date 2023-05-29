@@ -14,6 +14,7 @@ import LearnCss from "./pages/CSS/LearnCss";
 import LearnGit from "./pages/GIT/LearnGit";
 import LearnJs from "./pages/JS/LearnJs";
 import JSNotes from "./pages/JS/JSNotes";
+import Hire from "./pages/Hire";
 import "./App.css";
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="learn" element={<Learn />} />
+          <Route path="hire" element={<Hire />} />
           <Route path="learn/html" element={<LearnHtml />} />
           <Route path="learn/css" element={<LearnCss />} />
           <Route path="learn/git" element={<LearnGit />} />
