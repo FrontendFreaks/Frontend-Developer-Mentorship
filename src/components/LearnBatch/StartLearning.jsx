@@ -33,6 +33,7 @@ const StartLearning = () => {
           <h1 className="uppercase font-bold text-2xl">CSS</h1>
           <Link
             to="css"
+            onClick={scrollToTop}
             className="bg-[#6557fd] rounded px-16 py-3  text-white font-bold uppercase"
           >
             Start Learning
@@ -42,7 +43,8 @@ const StartLearning = () => {
           <SiJavascript size={60} color="#6557fd" />
           <h1 className="uppercase font-bold text-2xl">JS</h1>
           <Link
-            to=""
+            to="js"
+            onClick={scrollToTop}
             className="bg-[#6557fd] rounded px-16 py-3  text-white font-bold uppercase"
           >
             Start Learning
@@ -52,7 +54,8 @@ const StartLearning = () => {
           <BsGit size={80} color="#6557fd" />
           <h1 className="uppercase font-bold text-2xl">Git</h1>
           <Link
-            to=""
+            to="git"
+            onClick={scrollToTop}
             className="bg-[#6557fd] rounded px-16 py-3  text-white font-bold uppercase"
           >
             Start Learning

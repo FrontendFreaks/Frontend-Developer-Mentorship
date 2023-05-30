@@ -5,7 +5,10 @@ import { BsPeopleFill } from "react-icons/bs";
 import { FaTools, FaUserGraduate, FaVideo } from "react-icons/fa";
 const Features = () => {
   return (
-    <div className="mt-24 py-6 px-10  flex flex-col items-center justify-between space-y-12">
+    <div
+      className="mt-24 py-24 px-10  flex flex-col items-center justify-between space-y-12"
+      id="features"
+    >
       <h1 className="text-center font-bold text-5xl main-heading  ">
         Features
       </h1>

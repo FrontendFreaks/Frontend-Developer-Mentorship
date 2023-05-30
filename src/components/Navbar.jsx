@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { RiCloseLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { GoThreeBars } from "react-icons/go";
 import { BsFillRocketFill } from "react-icons/bs";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+
+  console.log(history);
   function onClose() {
     setMenu(false);
   }
@@ -15,10 +17,19 @@ const Navbar = () => {
   function closeMenu() {
     setMenu(false);
   }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="flex flex-row px-10 py-5  items-center justify-between   w-full fixed top-0 bg-white">
       <div className="flex flex-row items-center justify-center space-x-2">
-        <h3 className="text-3xl font-bold md:text-4xl main-heading ">
+        <h3
+          className="text-3xl font-bold md:text-4xl main-heading "
+          onClick={scrollToTop}
+        >
           <Link to="/">
             <span className="text-[#6557fd]">f</span>rontend
             <span className="text-[#6557fd]">f</span>reaks
@@ -28,35 +39,35 @@ const Navbar = () => {
       <div className="hidden  md:flex md:flex-row md:items-center md:justify-between md:space-x-6 ">
         <p>
           <a
-            href="#"
-            onClick={closeMenu}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out hover:text-[#6557fd]"
-          >
-            Mentorships
-          </a>
-        </p>
-        <p>
-          <a
             href="#about"
             onClick={closeMenu}
             className="uppercase text-md font-semibold transition-all duration-200 ease-out hover:text-[#6557fd]"
           >
-            Courses
+            About Us
           </a>
         </p>
         <p>
           <a
-            href="#projects"
+            href="#features"
             onClick={closeMenu}
             className="uppercase text-md font-semibold transition-all duration-200 ease-out hover:text-[#6557fd]"
           >
-            Assignments
+            Features
+          </a>
+        </p>
+        <p>
+          <a
+            href="#faqs"
+            onClick={closeMenu}
+            className="uppercase text-md font-semibold transition-all duration-200 ease-out hover:text-[#6557fd]"
+          >
+            FAQs
           </a>
         </p>
 
         <p className="bg-[#6557fd] px-12 py-3 rounded-full">
           <a
-            href="#contact"
+            href="#join"
             onClick={closeMenu}
             className="uppercase text-md font-bold text-white"
           >

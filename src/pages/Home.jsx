@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "./../components/Hero";
-import About from "./../components/About";
-import Features from "./../components/Features";
-import JoinBatches from "./../components/JoinBatches";
-import Accordion from "./../components/Accordion";
+import Hero from "../components/Home/Hero";
+import About from "../components/Home/About";
+import Features from "../components/Home/Features";
+import JoinBatches from "../components/Home/JoinBatches";
+import Accordion from "../components/Home/Accordion";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <About />
       <Features />
       <JoinBatches />
-      {/* <AboutFounder /> */}
+
       <Accordion />
     </>
   );
