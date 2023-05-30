@@ -30,12 +30,13 @@ const JoinBatches = () => {
         <div className="flex flex-col items-center justify-between space-y-2 shadow-sm  py-10 px-2  w-[380px]">
           <FaLaptopCode size={50} color="#6557fd" />
           <h1 className="uppercase font-bold text-2xl">Build</h1>
-          <a
-            href="#"
+          <Link
+            to="build"
+           
             className="bg-[#6557fd] rounded px-16 py-3  text-white font-bold uppercase"
           >
             Get Started
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-between space-y-2 shadow-sm  py-10 px-2  w-[380px]">
           <GiReceiveMoney size={50} color="#6557fd" />
