@@ -11,7 +11,10 @@ const JoinBatches = () => {
     });
   };
   return (
-    <div className="mt-24 py-6 px-10  flex flex-col items-center justify-between space-y-8">
+    <div
+      className="mt-24 py-32 px-10  flex flex-col items-center justify-between space-y-8"
+      id="join"
+    >
       <h1 className="text-center font-bold text-5xl main-heading  ">
         Join Batches
       </h1>
@@ -32,7 +35,7 @@ const JoinBatches = () => {
           <h1 className="uppercase font-bold text-2xl">Build</h1>
           <Link
             to="build"
-           
+            onClick={scrollToTop}
             className="bg-[#6557fd] rounded px-16 py-3  text-white font-bold uppercase"
           >
             Get Started

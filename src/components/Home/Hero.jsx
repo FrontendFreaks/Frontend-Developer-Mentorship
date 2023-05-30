@@ -10,10 +10,10 @@ const Hero = () => {
         </h1>
         <div className="flex flex-row items-center justify-start space-x-4">
           <a
-            href="#"
+            href="#join"
             className="bg-[#6557fd] px-12 py-4  text-white font-bold uppercase"
           >
-            Courses
+            Join
           </a>
           <a
             href="#"
