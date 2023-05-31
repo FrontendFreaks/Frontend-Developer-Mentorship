@@ -52,7 +52,7 @@ const StartLearning = () => {
         </div>
         <div className="flex flex-col items-center justify-between space-y-2  shadow-sm  py-10 px-2 w-[380px]">
           <BsGit size={80} color="#6557fd" />
-          <h1 className="uppercase font-bold text-2xl">Git</h1>
+          <h1 className="uppercase font-bold text-2xl">Git & GitHub </h1>
           <Link
             to="git"
             onClick={scrollToTop}

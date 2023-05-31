@@ -1,23 +1,23 @@
 import React from "react";
-import HeroImg from "./../../assets/Hero.png";
+import HeroImg from "./../../assets/hero.svg";
 const Hero = () => {
   return (
-    <div className="mt-32 py-6 px-10  flex flex-row items-center justify-between ">
-      <div className="md:w-1/2  flex flex-col items-start justify-between space-y-8">
-        <h1 className="text-7xl font-bold capitalize max-w-xl mt-9 leading-18 shadow-sm main-heading">
-          Unleash your <span className="text-[#6557fd]"> Frontend </span>{" "}
+    <div className="mt-24 py-24 px-10  flex flex-col-reverse md:flex-row items-center justify-between bg-[#131313] ">
+      <div className="md:w-1/2  flex flex-col items-center md:items-start justify-between space-y-8">
+        <h1 className="text-5xl md:text-7xl text-center md:text-left font-bold capitalize max-w-xl mt-9 leading-18 text-white">
+          Unleash your <span className="text-[#687eff]"> Frontend </span>{" "}
           Superpowers
         </h1>
         <div className="flex flex-row items-center justify-start space-x-4">
           <a
             href="#join"
-            className="bg-[#6557fd] px-12 py-4  text-white font-bold uppercase"
+            className="bg-[#687eff] px-12 py-3  text-white font-bold uppercase rounded"
           >
             Join
           </a>
           <a
             href="#"
-            className="text-[#6557fd] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#6557fd] hover:text-white"
+            className="bg-[#687eff] px-12 py-3 transition-all duration-200 ease-out   font-bold uppercase rounded  text-white"
           >
             Mentorship
           </a>

@@ -6,34 +6,35 @@ import { FaTools, FaUserGraduate, FaVideo } from "react-icons/fa";
 const Features = () => {
   return (
     <div
-      className="mt-24 py-24 px-10  flex flex-col items-center justify-between space-y-12"
+      className="mt-24 py-24 px-10  flex flex-col items-center justify-between space-y-12 bg-[#060606]"
       id="features"
     >
-      <h1 className="text-center font-bold text-5xl main-heading  ">
-        Features
-      </h1>
-      <div className="grid md:grid-cols-3 gap-6 items-start justify-between  ">
-        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
-          <FaUserGraduate size={40} color="#6557fd" />
-          <h1 className="uppercase font-bold text-xl main-heading">Guidance</h1>
+      <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3  ">
+        <h1> Features</h1>
+        <div className="w-28 h-2 bg-[white] rounded"></div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start justify-between  ">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#161616] rounded ">
+          <FaUserGraduate size={40} color="#687eff" />
+          <h1 className="uppercase font-bold text-xl text-white ">Guidance</h1>
           <p className="text-center text-[#767676] ">
             Get guidance in your career and life with the best mentors and
             experts across the world
           </p>
         </div>
-        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
-          <FaVideo size={40} color="#6557fd" />
-          <h1 className="uppercase font-bold text-xl main-heading">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#161616] rounded ">
+          <FaVideo size={40} color="#687eff" />
+          <h1 className="uppercase font-bold text-xl text-white">
             Curated Videos
           </h1>
           <p className="text-center text-[#767676]">
-            Learn through in-depth tutorials, how to approach an algorithm, how
-            to implement it & how to optimise it.
+            Discover through detailed tutorials: algorithm analysis,
+            implementation, and optimization.
           </p>
         </div>
-        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
-          <MdAssignment size={40} color="#6557fd" />
-          <h1 className="uppercase font-bold text-xl main-heading">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#161616] rounded ">
+          <MdAssignment size={40} color="#687eff" />
+          <h1 className="uppercase font-bold text-xl text-white">
             Assignments
           </h1>
           <p className="text-center text-[#767676]">
@@ -41,9 +42,9 @@ const Features = () => {
             well.
           </p>
         </div>
-        <div className="px-3  py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
-          <FaTools size={40} color="#6557fd" />
-          <h1 className="uppercase font-bold text-xl main-heading">
+        <div className="px-3  py-10 flex flex-col items-center justify-between space-y-2  bg-[#161616] rounded">
+          <FaTools size={40} color="#687eff" />
+          <h1 className="uppercase font-bold text-xl text-white ">
             {" "}
             Learn By Doing
           </h1>
@@ -52,17 +53,17 @@ const Features = () => {
             contributions
           </p>
         </div>
-        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
-          <MdSpeakerNotes size={40} color="#6557fd" />
-          <h1 className="uppercase font-bold text-xl main-heading">Notes</h1>
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#161616] rounded ">
+          <MdSpeakerNotes size={40} color="#687eff" />
+          <h1 className="uppercase font-bold text-xl text-white ">Notes</h1>
           <p className="text-center text-[#767676]">
-            Get complete cheatsheet and source code for all lectures so that you
-            can focus on learning and practising.
+            Get cheatsheet and source code for all lectures to focus on learning
+            and practicing.
           </p>
         </div>
-        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2 bg-[#f8f9fa]">
-          <BsPeopleFill size={40} color="#6557fd" />
-          <h1 className="uppercase font-bold text-xl main-heading">
+        <div className="px-3 py-10 flex flex-col items-center justify-between space-y-2  bg-[#161616] rounded">
+          <BsPeopleFill size={40} color="#687eff" />
+          <h1 className="uppercase font-bold text-xl text-white ">
             Grow with community
           </h1>
           <p className="text-center text-[#767676]">
