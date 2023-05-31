@@ -3,23 +3,23 @@ import AccordionElement from "./AccordionElement";
 const Dummy_Questions = [
   {
     id: "01",
-    question: "How many team members can I invite?",
+    question: " What is Frontend Freaks?",
     answer:
-      "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan. ",
+      "Frontend Freaks is a vibrant community founded by Vishal Rajput, dedicated to helping individuals in frontend development. We provide resources to learn frontend basics, work on practical projects, and stay up-to-date with the latest industry trends.",
     open: false,
   },
   {
     id: "02",
-    question: "What is the maximum file upload size? ",
+    question: "What is Frontend Developer Mentorship? ",
     answer:
-      "No more than 2GB. All files in your account must fit your allotted storage space.",
+      "Frontend Developer Mentorship is our program at Frontend Freaks Community designed to guide newcomers in learning frontend development, building real-world projects, and assisting them in securing internships and jobs.",
     open: true,
   },
   {
     id: "03",
-    question: " How do I reset my password?",
+    question: " Is Frontend Developer Mentorship paid?",
     answer:
-      " Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
+      "No, our mentorship programs and resources are completely free of cost. At Frontend Freaks, we believe in making quality education accessible to everyone.",
     open: false,
   },
 ];
@@ -41,7 +41,7 @@ const Accordion1 = () => {
     setQuestions(updatedQuestions);
   }
   return (
-    <div className="flex flex-col items-start justify-between w-[600px] space-y-1 ">
+    <div className="flex flex-col items-start justify-between w-[400] md:w-[600px] space-y-3 ">
       {questions.map((accordion) => (
         <AccordionElement accordion={accordion} onToggle={mainToggleHandler} />
       ))}

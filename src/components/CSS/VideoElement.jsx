@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-const VideoElement = ({ videoUrl, mainPoints }) => {
+const VideoElement = ({ videoUrl, mainPoints, heading }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -14,24 +14,18 @@ const VideoElement = ({ videoUrl, mainPoints }) => {
         <ReactPlayer url={videoUrl} controls />
       </div>
       <div className="md:1/2">
-        <h1 className=" font-bold text-4xl">Video Highlights</h1>
+        <h1 className=" font-bold text-4xl">{heading}</h1>
         <ol className="flex flex-col items-start justify-between space-y-1 mt-2 ">
           <li className="text-xl text-[#767676] ">
-            <span className="text-3xl text-[#6557fd] main-heading font-bold mr-2 ">
-              1.
-            </span>
+            <span className="text-3xl text-[#6557fd]  font-bold mr-2 ">1.</span>
             {mainPoints.one}
           </li>
           <li className="text-xl text-[#767676]">
-            <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
-              2.
-            </span>
+            <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">2.</span>
             {mainPoints.two}
           </li>
           <li className="text-xl text-[#767676] ">
-            <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
-              3.
-            </span>
+            <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">3.</span>
             {mainPoints.three}
           </li>
         </ol>

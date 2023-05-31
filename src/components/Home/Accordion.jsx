@@ -4,11 +4,14 @@ import Accordion2 from "./Accordion2";
 const Accordion = () => {
   return (
     <div
-      className="mt-24 py-24 px-20 flex flex-col space-y-12 bg-[#f7f7ff]"
+      className="mt-24 py-24  px-5 md:px-20 flex flex-col space-y-12 bg-[#687eff]"
       id="faqs"
     >
-      <h1 className="text-left mx-4 font-bold text-5xl main-heading  ">FAQs</h1>
-      <div className="flex flex-row items-start justify-between space-x-2 ">
+      <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3  ">
+        <h1> FAQs </h1>
+        <div className="w-28 h-2 bg-[white] rounded"></div>
+      </div>
+      <div className="flex flex-col md:flex-row items-start justify-between space-y-4 md:space-x-2 md:space-y-0 ">
         <Accordion1 />
         <Accordion2 />
       </div>

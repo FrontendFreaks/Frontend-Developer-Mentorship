@@ -18,17 +18,17 @@ const Introduction = () => {
           <ReactPlayer url="https://youtu.be/EOwWXNBKtBM" controls />
         </div>
         <div className="md:1/2">
-          <h1 className=" font-bold text-4xl">Video Highlights</h1>
+          <h1 className=" font-bold text-4xl">Introduction to HTML</h1>
           <ol className="flex flex-col items-start justify-between space-y-1 mt-2 ">
             <li className="text-xl text-[#767676] ">
-              <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
+              <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">
                 1.
               </span>
               Set up HTML boilerplate, add a page title, and use Live Server
               extension for development.
             </li>
             <li className="text-xl text-[#767676]">
-              <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
+              <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">
                 2.
               </span>
               Learn heading and paragraph tags, line breaks, horizontal lines,
@@ -36,7 +36,7 @@ const Introduction = () => {
               lists, tables, and forms in HTML.
             </li>
             <li className="text-xl text-[#767676] ">
-              <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
+              <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">
                 3.
               </span>
               Explore media embedding, semantic tags, and practice HTML through

@@ -18,24 +18,18 @@ const Introduction = () => {
             </h1>
             <ol className="flex flex-col items-start justify-between space-y-2 mt-3">
               <li className="text-xl text-[#767676] ">
-                <span className="text-3xl text-[#6557fd] main-heading font-bold ">
-                  1.{" "}
-                </span>
+                <span className="text-3xl text-[#6557fd]  font-bold ">1. </span>
                 Beginner-friendly web development curriculum: Covers HTML, CSS,
                 JavaScript, Git, and GitHub from scratch.
               </li>
               <li className="text-xl text-[#767676]">
-                <span className="text-3xl text-[#6557fd] main-heading font-bold ">
-                  2.{" "}
-                </span>{" "}
+                <span className="text-3xl text-[#6557fd]  font-bold ">2. </span>{" "}
                 Comprehensive learning materials: Includes resources,
                 assignments, cheat sheets, and over 100 questions for practice
                 and testing.
               </li>
               <li className="text-xl text-[#767676] ">
-                <span className="text-3xl text-[#6557fd] main-heading font-bold ">
-                  3.{" "}
-                </span>{" "}
+                <span className="text-3xl text-[#6557fd]  font-bold ">3. </span>{" "}
                 Frontend Developer Essential Course: Equips students with
                 essential skills and knowledge to excel in frontend development.
               </li>
