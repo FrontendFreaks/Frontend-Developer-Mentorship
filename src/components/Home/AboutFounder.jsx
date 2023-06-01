@@ -39,14 +39,16 @@ const AboutFounder = () => {
           </p>
           <div className="flex flex-row items-start justify-start space-x-3">
             <a href="#">
-              <AiFillTwitterCircle size={45} className="hover:text-[#6557fd]" />
+              <AiFillTwitterCircle size={45} className="hover:text-[#687eff]" />
             </a>
             <a href="#">
-              <AiFillLinkedin size={45} />
+              <AiFillLinkedin size={45} className="hover:text-[#687eff]" />
             </a>
-
             <a href="#">
-              <AiFillGithub size={45} />
+              <AiFillYoutube size={50} className="hover:text-[#687eff]" />
+            </a>
+            <a href="#">
+              <AiFillGithub size={45} className="hover:text-[#687eff]" />
             </a>
           </div>
         </div>

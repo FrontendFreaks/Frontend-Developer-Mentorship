@@ -1,9 +1,10 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { GoStar } from "react-icons/go";
 const Introduction = () => {
   return (
     <div>
-      <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
+      <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#687eff]   ">
         <p>Build Batch</p>
       </h1>
       <div className="flex flex-col items-start justify-between space-y-7">
@@ -12,30 +13,35 @@ const Introduction = () => {
             <ReactPlayer url="https://youtu.be/F6WT-EwTBt4" controls />
           </div>
           <div className="md:1/2">
-            <h1 className="text-left font-bold text-4xl   ">
-              Batch Highlights
-            </h1>
+            <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3  ">
+              <h1> Batch Highlights</h1>
+              <div className="w-28 h-2 bg-[white] rounded"></div>
+            </div>
             <ol className="flex flex-col items-start justify-between space-y-2 mt-3">
-              <li className="text-xl text-[#767676] ">
-                <span className="text-3xl text-[#6557fd] main-heading font-bold ">
-                  1.{" "}
-                </span>
-                Second batch: ReactJS, Redux, Tailwind, NextJS. Builds
-                real-world projects, advances frontend skills.
+              <li className="text-xl text-white flex flex-row space-x-2 ">
+                <GoStar size={100} className="-mt-8" />
+
+                <p>
+                  The second batch focuses on ReactJS, Redux, Tailwind, and
+                  NextJS, enabling participants to create practical projects and
+                  enhance their frontend expertise.
+                </p>
               </li>
-              <li className="text-xl text-[#767676]">
-                <span className="text-3xl text-[#6557fd] main-heading font-bold ">
-                  2.{" "}
-                </span>{" "}
-                For those with HTML, CSS, and JavaScript basics. Elevate skills
-                and create with guidance.
+              <li className="text-xl text-white flex flex-row space-x-2 ">
+                <GoStar size={60} className="-mt-4" />
+
+                <p>
+                  For those with HTML, CSS, and JavaScript basics. Elevate
+                  skills and create with guidance.
+                </p>
               </li>
-              <li className="text-xl text-[#767676] ">
-                <span className="text-3xl text-[#6557fd] main-heading font-bold ">
-                  3.{" "}
-                </span>{" "}
-                Level up in frontend development: ReactJS, Redux, Tailwind,
-                NextJS projects in second batch.
+              <li className="text-xl text-white flex flex-row space-x-2 ">
+                <GoStar size={60} className="-mt-4" />
+
+                <p>
+                  Level up in frontend development: ReactJS, Redux, Tailwind,
+                  NextJS projects in second batch.
+                </p>
               </li>
             </ol>
           </div>

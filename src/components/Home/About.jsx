@@ -25,7 +25,7 @@ const About = () => {
               development through free resources, support, and guidance for a
               successful journey.
             </p>
-          </li>{" "}
+          </li>
           <li className="text-xl text-white flex flex-row space-x-2 ">
             <GoStar size={60} className="-mt-4" />
 

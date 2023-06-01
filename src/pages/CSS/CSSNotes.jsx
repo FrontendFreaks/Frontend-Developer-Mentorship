@@ -494,7 +494,7 @@ const CSSNotes = () => {
       <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
         <p>CSS Cheatsheet</p>
       </h1>
-      <ul className="flex flex-row items-center justify-start space-x-4 uppercase text-md font-bold">
+      <ul className="flex flex-row items-center justify-start space-x-4 uppercase text-md font-bold text-white">
         <li>
           <a href="#css">Basic CSS</a>
         </li>

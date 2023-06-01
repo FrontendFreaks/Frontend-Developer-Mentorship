@@ -3,7 +3,7 @@ import VideoElement from "./VideoElement";
 const Introduction = () => {
   return (
     <div>
-      <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
+      <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#687eff]   ">
         <p>CSS</p>
       </h1>
       <VideoElement

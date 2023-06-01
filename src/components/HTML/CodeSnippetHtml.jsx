@@ -1,17 +1,25 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { okaidia } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 const CodeSnippetHtml = ({ heading, code }) => {
   return (
     <div className="">
-      <h1 className=" font-bold text-2xl">{heading}</h1>
-      <SyntaxHighlighter
-        language="html"
-        style={okaidia}
-        customStyle={{ fontSize: "16px", lineHeight: 1.5, width: "700px" }}
-      >
-        {code}
-      </SyntaxHighlighter>
+      <h1 className=" font-bold text-2xl text-white">{heading}</h1>
+      <div className="overflow-x-auto">
+        <SyntaxHighlighter
+          language="html"
+          style={dracula}
+          className="whitespace-pre-wrap"
+          customStyle={{
+            fontSize: "16px",
+            lineHeight: 1.5,
+            width: "700px",
+            color: "white",
+          }}
+        >
+          {code}
+        </SyntaxHighlighter>
+      </div>
     </div>
   );
 };

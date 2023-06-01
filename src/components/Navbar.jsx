@@ -50,7 +50,7 @@ const Navbar = () => {
         <p>
           <Link
             onClick={() => handleRouteAndSectionChange("/", "#about")}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white hover:text-[#6557fd]"
+            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white hover:text-[#687eff]"
           >
             About Us
           </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <a
             href="#features"
             onClick={closeMenu}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#6557fd]"
+            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
           >
             Features
           </a>
@@ -68,13 +68,13 @@ const Navbar = () => {
           <a
             href="#faqs"
             onClick={closeMenu}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#6557fd]"
+            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
           >
             FAQs
           </a>
         </p>
 
-        <p className="bg-[#6557fd] px-12 py-3 rounded-full">
+        <p className="bg-[#687eff] px-12 py-3 rounded-full">
           <a
             href="#join"
             onClick={closeMenu}
@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="md:hidden">
         {menu ? (
           <RiCloseLine
-            color="#6557fd"
+            color="#687eff"
             fontWeight="bold"
             size={35}
             onClick={onClose}
@@ -95,7 +95,7 @@ const Navbar = () => {
           />
         ) : (
           <GoThreeBars
-            color="#6557fd"
+            color="#687eff"
             fontWeight="bold"
             size={30}
             onClick={onOpen}
