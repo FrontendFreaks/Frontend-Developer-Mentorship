@@ -8,12 +8,12 @@ import {
 } from "react-icons/ai";
 const AboutFounder = () => {
   return (
-    <div className="mt-24 py-6 px-20 flex flex-col space-y-12 ">
-      <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3  ">
-        <h1> About the Founder </h1>
+    <div className="mt-24 py-6 px-5 md:px-20 flex flex-col space-y-12 ">
+      <div className="text-left font-bold text-5xl text-white flex flex-col items-center md:items-start justify-between space-y-3  ">
+        <h1 className="text-center md:text-left"> About the Founder </h1>
         <div className="w-28 h-2 bg-[white] rounded"></div>
       </div>
-      <div className="flex flex-row items-center justify-between space-x-12">
+      <div className="flex flex-col md:flex-row items-center justify-between space-x-12 space-y-8 md:space-y-0">
         <div className="md:1/2 flex flex-col items-between justify-between space-y-3 text-white   ">
           <img src={FounderImage} className="w-[400px] h-84  rounded-full" />
           <h1 className="text-4xl font-bold text-center ">Vishal Rajput</h1>
@@ -39,14 +39,16 @@ const AboutFounder = () => {
           </p>
           <div className="flex flex-row items-start justify-start space-x-3">
             <a href="#">
-              <AiFillTwitterCircle size={45} className="hover:text-[#6557fd]" />
+              <AiFillTwitterCircle size={45} className="hover:text-[#687eff]" />
             </a>
             <a href="#">
-              <AiFillLinkedin size={45} />
+              <AiFillLinkedin size={45} className="hover:text-[#687eff]" />
             </a>
-
             <a href="#">
-              <AiFillGithub size={45} />
+              <AiFillYoutube size={50} className="hover:text-[#687eff]" />
+            </a>
+            <a href="#">
+              <AiFillGithub size={45} className="hover:text-[#687eff]" />
             </a>
           </div>
         </div>

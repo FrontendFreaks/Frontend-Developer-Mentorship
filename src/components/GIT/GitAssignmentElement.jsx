@@ -4,7 +4,7 @@ const GITAssignmentElement = ({ number, problem }) => {
   return (
     <div className="p-4">
       <div className=" font-bold text-2xl flex flex-row items-center justify-start space-x-3 ">
-        <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
+        <span className="text-3xl text-[#687eff] font-bold mx-1 ">
           {number}
         </span>
       </div>

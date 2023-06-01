@@ -7,13 +7,13 @@ const HTMLAssignmentElement = ({ number, heading, problem, imageSrc }) => {
   };
   return (
     <div className="p-4">
-      <div className=" font-bold text-2xl flex flex-row items-center justify-start space-x-3 ">
-        <span className="text-3xl text-[#6557fd] main-heading font-bold mx-1 ">
+      <div className=" font-bold text-2xl flex flex-row items-center justify-start space-x-3 text-white ">
+        <span className="text-3xl text-[#687eff] font-bold mx-1 ">
           {number}
         </span>
         <h1> {heading} </h1>
         <button
-          className={`text-sm ${preview ? "text-red-400" : "text-[#6557fd]"} `}
+          className={`text-sm ${preview ? "text-red-400" : "text-[#687eff]"} `}
           onClick={changePreview}
         >
           {preview ? "CLOSE" : "PREVIEW"}

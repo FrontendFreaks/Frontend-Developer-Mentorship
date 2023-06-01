@@ -9,30 +9,30 @@ const VideoElement = ({ videoUrl, mainPoints, heading }) => {
     });
   };
   return (
-    <div className="flex flex-row items-start justify-between space-x-4 my-12 ">
-      <div className="md:1/2">
-        <ReactPlayer url={videoUrl} controls />
+    <div className="flex my-4 flex-col md:flex-row items-start justify-between space-x-4 p-1 space-y-4 md:space-y-0">
+      <div className="w-full md:w-4/5">
+        <ReactPlayer url={videoUrl} width="100%" controls />
       </div>
-      <div className="md:1/2">
-        <h1 className=" font-bold text-4xl">{heading}</h1>
-        <ol className="flex flex-col items-start justify-between space-y-1 mt-2 ">
-          <li className="text-xl text-[#767676] ">
-            <span className="text-3xl text-[#6557fd]  font-bold mr-2 ">1.</span>
+      <div className="w-full">
+        <h1 className=" font-bold text-4xl text-white">{heading}</h1>
+        <ol className="flex flex-col items-start justify-between space-y-1 mt-2 text-white ">
+          <li className="text-xl  ">
+            <span className="text-3xl text-[#687eff]  font-bold mr-2 ">1|</span>
             {mainPoints.one}
           </li>
-          <li className="text-xl text-[#767676]">
-            <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">2.</span>
+          <li className="text-xl ">
+            <span className="text-3xl text-[#687eff]  font-bold mx-1 ">2|</span>
             {mainPoints.two}
           </li>
-          <li className="text-xl text-[#767676] ">
-            <span className="text-3xl text-[#6557fd]  font-bold mx-1 ">3.</span>
+          <li className="text-xl ">
+            <span className="text-3xl text-[#687eff]  font-bold mx-1 ">3|</span>
             {mainPoints.three}
           </li>
         </ol>
         <div className="flex flex-row items-center justify-start space-x-4 mt-7">
           <Link
             to="assignment"
-            className="bg-[#6557fd] px-12 py-4  text-white font-bold uppercase"
+            className="bg-[#687eff] px-12 py-4  text-white font-bold uppercase"
             onClick={scrollToTop}
           >
             Assignments
@@ -40,7 +40,7 @@ const VideoElement = ({ videoUrl, mainPoints, heading }) => {
           <Link
             to="notes"
             onClick={scrollToTop}
-            className="text-[#6557fd] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#6557fd] hover:text-white"
+            className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
           >
             Notes
           </Link>

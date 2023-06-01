@@ -1,5 +1,5 @@
 import React from "react";
-import { RiPencilRuler2Fill } from "react-icons/ri";
+import { GoStar } from "react-icons/go";
 import ReactPlayer from "react-player";
 const Introduction = () => {
   return (
@@ -8,30 +8,46 @@ const Introduction = () => {
         <p>Learn Batch</p>
       </h1>
       <div className="flex flex-col items-start justify-between space-y-7">
-        <div className="flex flex-row items-start justify-between space-x-6 p-1">
-          <div className="md:1/2">
-            <ReactPlayer url="https://youtu.be/tI7R7YG4jEY" controls />
+        <div className="space-y-4 flex flex-col md:flex-row items-start justify-between space-x-3 md:space-y-0">
+          <div className="w-full ">
+            <ReactPlayer
+              url="https://youtu.be/tI7R7YG4jEY"
+              width="100%"
+              controls
+            />
           </div>
-          <div className="md:1/2">
-            <h1 className="text-left font-bold text-4xl   ">
-              Batch Highlights
-            </h1>
+
+          <div className="md:1/2  ">
+            <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3  ">
+              <h1> Batch Highlights</h1>
+              <div className="w-28 h-2 bg-[white] rounded"></div>
+            </div>
             <ol className="flex flex-col items-start justify-between space-y-2 mt-3">
-              <li className="text-xl text-[#767676] ">
-                <span className="text-3xl text-[#6557fd]  font-bold ">1. </span>
-                Beginner-friendly web development curriculum: Covers HTML, CSS,
-                JavaScript, Git, and GitHub from scratch.
+              <li className="text-xl text-white flex flex-row space-x-2 ">
+                <GoStar size={70} className="-mt-4" />
+
+                <p>
+                  Beginner-friendly web development curriculum: Covers HTML,
+                  CSS, JavaScript, Git, and GitHub from scratch.
+                </p>
               </li>
-              <li className="text-xl text-[#767676]">
-                <span className="text-3xl text-[#6557fd]  font-bold ">2. </span>{" "}
-                Comprehensive learning materials: Includes resources,
-                assignments, cheat sheets, and over 100 questions for practice
-                and testing.
+              <li className="text-xl text-white flex flex-row space-x-2 ">
+                <GoStar size={70} className="-mt-4" />
+
+                <p>
+                  Comprehensive learning materials: Includes resources,
+                  assignments, cheat sheets, and over 100 questions for practice
+                  and testing.
+                </p>
               </li>
-              <li className="text-xl text-[#767676] ">
-                <span className="text-3xl text-[#6557fd]  font-bold ">3. </span>{" "}
-                Frontend Developer Essential Course: Equips students with
-                essential skills and knowledge to excel in frontend development.
+              <li className="text-xl text-white flex flex-row space-x-2 ">
+                <GoStar size={70} className="-mt-4" />
+
+                <p>
+                  Frontend Developer Essential Course: Equips students with
+                  essential skills and knowledge to excel in frontend
+                  development.
+                </p>
               </li>
             </ol>
           </div>
