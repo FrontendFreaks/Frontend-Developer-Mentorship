@@ -9,11 +9,11 @@ const VideoElement = ({ videoUrl, mainPoints, heading }) => {
     });
   };
   return (
-    <div className="flex flex-row items-start justify-between space-x-4 my-12 ">
-      <div className="md:1/2">
-        <ReactPlayer url={videoUrl} controls />
+    <div className="flex my-4 flex-col md:flex-row items-start justify-between space-x-4 p-1 space-y-4 md:space-y-0">
+      <div className="w-full md:w-4/5">
+        <ReactPlayer url={videoUrl} width="100%" controls />
       </div>
-      <div className="md:1/2">
+      <div className="w-full">
         <h1 className=" font-bold text-4xl text-white">{heading}</h1>
         <ol className="flex flex-col items-start justify-between space-y-1 mt-2 text-white ">
           <li className="text-xl  ">

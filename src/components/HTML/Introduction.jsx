@@ -12,11 +12,16 @@ const Introduction = () => {
     <div>
       <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#687eff]   ">
         <p>HTML</p>
-      </h1>{" "}
-      <div className="flex flex-row items-start justify-between space-x-4 p-1">
-        <div className="md:1/2">
-          <ReactPlayer url="https://youtu.be/EOwWXNBKtBM" controls />
+      </h1>
+      <div className="flex flex-col md:flex-row items-start justify-between space-x-4 p-1 space-y-4 md:space-y-0">
+        <div className="w-full ">
+          <ReactPlayer
+            url="https://youtu.be/EOwWXNBKtBM"
+            width="100%"
+            controls
+          />
         </div>
+
         <div className="md:1/2 text-white">
           <h1 className=" font-bold text-4xl">Introduction to HTML</h1>
           <ol className="flex flex-col items-start justify-between space-y-1 mt-2 ">

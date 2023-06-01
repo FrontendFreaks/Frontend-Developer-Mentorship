@@ -10,8 +10,8 @@ const VideoElement = ({ videoSrc, mainPoints, heading }) => {
   };
   return (
     <div className="flex flex-row items-start justify-between space-x-7 my-12 p-4 ">
-      <div className="md:1/2">
-        <ReactPlayer url={videoSrc} controls />
+      <div className="w-full md:w-1/2  flex flex-col items-center ">
+        <ReactPlayer url={videoSrc} width="100%" controls />
       </div>
       <div className="md:1/2 flex flex-col space-y-5 items-start">
         <h1 className=" font-bold text-4xl max-w-md text-white">{heading}</h1>

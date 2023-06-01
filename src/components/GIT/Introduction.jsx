@@ -14,11 +14,16 @@ const Introduction = () => {
       <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#687eff]   ">
         <p> GIT & Github</p>
       </h1>
-      <div className="flex flex-row items-start justify-between space-x-4 p-1">
-        <div className="md:1/2">
-          <ReactPlayer url="https://youtu.be/ng_3YZHnz8U" controls />
+      <div className="flex my-4 flex-col md:flex-row items-start justify-between space-x-4 p-1 space-y-4 md:space-y-0">
+        <div className="w-full md:w-4/5">
+          <ReactPlayer
+            url="https://youtu.be/ng_3YZHnz8U"
+            width="100%"
+            controls
+          />
         </div>
-        <div className="md:1/2">
+
+        <div className="w-full">
           <h1 className=" font-bold text-4xl text-white">
             Introduction to Git & Github{" "}
           </h1>

@@ -41,7 +41,7 @@ const Accordion1 = () => {
     setQuestions(updatedQuestions);
   }
   return (
-    <div className="flex flex-col items-start justify-between w-[400] md:w-[600px] space-y-3 ">
+    <div className="flex flex-col items-start justify-between w-[300] md:w-[600px] space-y-3 ">
       {questions.map((accordion) => (
         <AccordionElement accordion={accordion} onToggle={mainToggleHandler} />
       ))}

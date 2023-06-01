@@ -2,7 +2,7 @@ import React from "react";
 import HeroImg from "./../../assets/hero.svg";
 const Hero = () => {
   return (
-    <div className="mt-24 py-24 px-10  flex flex-col-reverse md:flex-row items-center justify-between bg-[#131313] ">
+    <div className="mt-24 py-1 md:py-24 px-10  flex flex-col-reverse md:flex-row items-center justify-between bg-[#131313] ">
       <div className="md:w-1/2  flex flex-col items-center md:items-start justify-between space-y-8">
         <h1 className="text-5xl md:text-7xl text-center md:text-left font-bold capitalize max-w-xl mt-9 leading-18 text-white">
           Unleash your <span className="text-[#687eff]"> Frontend </span>{" "}
