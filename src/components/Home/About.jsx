@@ -1,7 +1,7 @@
-import React from "react";
-import AboutImage from "./../../assets/about.avif";
 import ReactPlayer from "react-player";
 import { GoStar } from "react-icons/go";
+import { aboutText } from "./content"
+
 const About = () => {
   return (
     <div
@@ -17,32 +17,14 @@ const About = () => {
           <div className="w-28 h-2 bg-[white] rounded"></div>
         </div>
         <ul className="flex flex-col items-start justify-between space-y-2">
-          <li className="text-xl text-white flex flex-row space-x-2 ">
-            <GoStar size={70} className="-mt-4" />
-
-            <p>
-              Frontend Freaks empowers individuals to master frontend
-              development through free resources, support, and guidance for a
-              successful journey.
-            </p>
-          </li>
-          <li className="text-xl text-white flex flex-row space-x-2 ">
-            <GoStar size={60} className="-mt-4" />
-
-            <p>
-              Learning is continuous; staying updated with evolving frontend
-              trends and technologies is crucial for growth in this field.
-            </p>
-          </li>{" "}
-          <li className="text-xl text-white flex flex-row space-x-2 ">
-            <GoStar size={60} className="-mt-4" />
-
-            <p>
-              Join us today to unleash your potential, sharpen your coding
-              prowess, and create stunning user experiences as a frontend
-              master.
-            </p>
-          </li>
+          {
+            aboutText.map((text) => (
+              <li className="text-xl text-white flex flex-row space-x-2">
+                <GoStar size={70} className="-mt-4" />
+                <p>{text}</p>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>

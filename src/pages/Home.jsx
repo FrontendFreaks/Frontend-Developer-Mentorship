@@ -1,10 +1,6 @@
 import React from "react";
-import Hero from "../components/Home/Hero";
-import About from "../components/Home/About";
-import Features from "../components/Home/Features";
-import JoinBatches from "../components/Home/JoinBatches";
-import Accordion from "../components/Home/Accordion";
-import AboutFounder from "../components/Home/AboutFounder";
+import { About, AboutFounder, Accordion, JoinBatches, Features, Hero } from "../components/Home";
+
 const Home = () => {
   return (
     <>
