@@ -1,13 +1,14 @@
-import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
-const CodeSnippetCSS = ({ heading, code }) => {
+
+const NotesSnippet = ({ heading, language, code, point }) => {
   return (
     <div className="">
-      <h1 className=" font-bold text-2xl text-white">{heading}</h1>
+      <h1 className="font-bold text-2xl text-white">{heading}</h1>
+      {language === "js" && <p className="max-w-2xl text-[#767676]"> {point}</p>}
       <div className="overflow-x-auto">
         <SyntaxHighlighter
-          language="css"
+          language={language}
           style={dracula}
           className="whitespace-pre-wrap"
           customStyle={{
@@ -24,4 +25,4 @@ const CodeSnippetCSS = ({ heading, code }) => {
   );
 };
 
-export default CodeSnippetCSS;
+export default NotesSnippet;

@@ -18,8 +18,8 @@ const About = () => {
         </div>
         <ul className="flex flex-col items-start justify-between space-y-2">
           {
-            aboutText.map((text) => (
-              <li className="text-xl text-white flex flex-row space-x-2">
+            aboutText.map((text, index) => (
+              <li key={index} className="text-xl text-white flex flex-row space-x-2">
                 <GoStar size={70} className="-mt-4" />
                 <p>{text}</p>
               </li>

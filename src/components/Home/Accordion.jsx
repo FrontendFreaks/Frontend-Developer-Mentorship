@@ -32,9 +32,11 @@ const Accordion = () => {
       </div>
       <div className="flex flex-col md:flex-row items-start justify-between space-y-4 md:space-x-2 md:space-y-0 ">
         <div className="flex flex-col items-start justify-between w-[300] md:w-[600px] space-y-3 ">
-          {questions.map((accordion) => (
-            <AccordionElement accordion={accordion} onToggle={mainToggleHandler} />
-          ))}
+          {
+            questions.map((accordion) => (
+              <AccordionElement accordion={accordion} onToggle={mainToggleHandler} key={accordion.id} />
+            ))
+          }
         </div>
       </div>
     </div>
