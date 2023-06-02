@@ -1,5 +1,5 @@
 import React from "react";
-import CodeSnippetHtml from "../../components/HTML/CodeSnippetHtml";
+import NotesSnippet from "../../components/NotesSnippet";
 import { HTMLBasicNotes } from "../Notes";
 
 const HTMLNotes = () => {
@@ -9,13 +9,16 @@ const HTMLNotes = () => {
         <p>HTML Cheatsheet</p>
       </h1>
       <div className="flex flex-col items-start justify-between space-y-4">
-        {HTMLBasicNotes.map((element, index) => (
-          <CodeSnippetHtml
-            key={index}
-            heading={element.heading}
-            code={element.code}
-          />
-        ))}
+        {
+          HTMLBasicNotes.map((element, index) => (
+            <NotesSnippet
+              key={index}
+              heading={element.heading}
+              code={element.code}
+              language="html"
+            />
+          ))
+        }
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
-import CodeSnippetCSS from "../../components/CSS/CodeSnippetCSS";
 import { CSSBasicNotes, CSSFlexboxNotes, CSSGridNotes } from "../Notes";
+import NotesSnippet from "../../components/NotesSnippet";
 
 const CSSNotes = () => {
   return (
@@ -26,9 +26,15 @@ const CSSNotes = () => {
         <h1 className="text-left font-bold text-3xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
           <p>Basic CSS</p>
         </h1>
-        {CSSBasicNotes.map((element) => (
-          <CodeSnippetCSS heading={element.heading} code={element.code} />
-        ))}
+        {
+          CSSBasicNotes.map((element) => (
+            <NotesSnippet
+              heading={element.heading}
+              code={element.code}
+              language="css"
+            />
+          ))
+        }
       </div>
       <div
         className="flex flex-col items-start justify-between space-y-4 mt-8 py-24"
@@ -37,9 +43,15 @@ const CSSNotes = () => {
         <h1 className="text-left font-bold text-3xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
           <p>Flexbox</p>
         </h1>
-        {CSSFlexboxNotes.map((element) => (
-          <CodeSnippetCSS heading={element.heading} code={element.code} />
-        ))}
+        {
+          CSSFlexboxNotes.map((element) => (
+            <NotesSnippet
+              heading={element.heading}
+              code={element.code}
+              language="css"
+            />
+          ))
+        }
       </div>
       <div
         className="flex flex-col items-start justify-between space-y-4 mt-8 py-24"
@@ -51,9 +63,15 @@ const CSSNotes = () => {
         <h1 className="text-left font-bold text-1xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
           <p>1. Grid container properties</p>
         </h1>
-        {CSSGridNotes.map((element) => (
-          <CodeSnippetCSS heading={element.heading} code={element.code} />
-        ))}
+        {
+          CSSGridNotes.map((element) => (
+            <NotesSnippet
+              heading={element.heading}
+              code={element.code}
+              language="css"
+            />
+          ))
+        }
       </div>
     </div>
   );
