@@ -2,6 +2,7 @@ import React from "react";
 import { FaTwitterSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
+
 const Contact = () => {
   return (
     <div className=" mt-24 py-12 px-10 bg-[#eff7f6] flex flex-col items-center justify-between space-y-4">
