@@ -6,7 +6,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
-const Learn = () => {
+const LearnBatch = () => {
   const batchHighlights = [
     "Beginner-friendly web development curriculum: Covers HTML, CSS, JavaScript, Git, and GitHub from scratch.",
     "Comprehensive learning materials: Includes resources, assignments, cheat sheets, and over 100 questions for practice and testing.",
@@ -48,4 +48,4 @@ const Learn = () => {
   );
 };
 
-export default Learn;
+export default LearnBatch;

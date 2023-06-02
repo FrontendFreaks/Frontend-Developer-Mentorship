@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import Learn from "./pages/Learn";
+import LearnBatch from "./pages/LearnBatch";
 import LearnHtml from "./pages/HTML/LearnHtml";
 import HTMLAssignment from "./pages/HTML/HTMLAssignment";
 import CSSAssignments from "./pages/CSS/CSSAssignments";
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="learn" element={<Learn />} />
+          <Route path="learn" element={<LearnBatch />} />
           <Route path="hire" element={<Hire />} />
           <Route path="build" element={<Build />} />
           <Route path="learn/html" element={<LearnHtml />} />

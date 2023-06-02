@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-const VideoElement = ({ videoUrl, mainPoints, heading }) => {
+const VideoElement = ({ videoUrl, mainPoints, heading, NotesLink }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -37,13 +37,15 @@ const VideoElement = ({ videoUrl, mainPoints, heading }) => {
           >
             Assignments
           </Link>
-          <Link
-            to="notes"
-            onClick={scrollToTop}
-            className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
-          >
-            Notes
-          </Link>
+          {
+            NotesLink && <Link
+              to="notes"
+              onClick={scrollToTop}
+              className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
+            >
+              Notes
+            </Link>
+          }
         </div>
       </div>
     </div>
