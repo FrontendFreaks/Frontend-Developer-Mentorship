@@ -1,22 +1,21 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const JSAssignmentElement = ({ number, heading, problem, imageSrc, link }) => {
+const Assignment = ({ number, heading, problem, imageSrc, link }) => {
   const [preview, setPreview] = useState(false);
   const changePreview = () => {
     setPreview(!preview);
   };
   return (
     <div className="p-4">
-      <div className=" font-bold text-2xl flex flex-row items-center justify-start space-x-3 ">
+      <div className="font-bold text-2xl flex flex-row items-center justify-start space-x-3">
         <span className="text-3xl text-[#687eff]  font-bold mx-1 ">
           {number}
         </span>
         <h1 className="text-white"> {heading} </h1>
         {imageSrc && (
           <button
-            className={`text-sm ${
-              preview ? "text-red-400" : "text-[#687eff]"
-            } `}
+            className={`text-sm ${preview ? "text-red-400" : "text-[#687eff]"
+              } `}
             onClick={changePreview}
           >
             {preview ? "CLOSE" : "PREVIEW"}
@@ -25,7 +24,7 @@ const JSAssignmentElement = ({ number, heading, problem, imageSrc, link }) => {
       </div>
 
       <div>
-        <p className="text-xl text-[#767676] ">
+        <p className="text-xl text-[#767676]">
           {problem}{" "}
           {link && (
             <a
@@ -43,4 +42,4 @@ const JSAssignmentElement = ({ number, heading, problem, imageSrc, link }) => {
   );
 };
 
-export default JSAssignmentElement;
+export default Assignment;

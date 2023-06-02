@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const NotesSnippet = ({ heading, language, code }) => {
+const NotesSnippet = ({ heading, language, code, point }) => {
   return (
     <div className="">
       <h1 className="font-bold text-2xl text-white">{heading}</h1>
