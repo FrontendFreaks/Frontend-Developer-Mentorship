@@ -91,7 +91,7 @@ const Navbar = () => {
             fontWeight="bold"
             size={35}
             onClick={onClose}
-            className="font-bold"
+            className="font-bold cursor-pointer"
           />
         ) : (
           <GoThreeBars
@@ -99,6 +99,7 @@ const Navbar = () => {
             fontWeight="bold"
             size={30}
             onClick={onOpen}
+            className="cursor-pointer"
           />
         )}
         {menu && (
