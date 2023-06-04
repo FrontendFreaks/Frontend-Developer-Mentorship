@@ -8,7 +8,7 @@ import { BsGit } from "react-icons/bs";
 
 const LearnBatch = () => {
   const batchHighlights = [
-    "Beginner-friendly web development curriculum: Covers HTML, CSS, JavaScript, Git, and GitHub from scratch.",
+    "Beginner-friendly web development curriculum: Covers HTML, CSS, JavaScript, Git, and GitHub from scratch with hands-on exercises.",
     "Comprehensive learning materials: Includes resources, assignments, cheat sheets, and over 100 questions for practice and testing.",
     "Frontend Developer Essential Course: Equips students with essential skills and knowledge to excel in frontend development.",
   ];
@@ -37,7 +37,7 @@ const LearnBatch = () => {
   ];
 
   return (
-    <div className="mt-32 py-6 px-2 md:px-10 ">
+    <div className="mt-32 py-6 px-2 md:px-10">
       <BatchIntroduction
         batchName="Learn"
         batchIntroVideo="https://youtu.be/tI7R7YG4jEY"

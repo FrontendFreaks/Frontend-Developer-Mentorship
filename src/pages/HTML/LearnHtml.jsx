@@ -8,18 +8,16 @@ const LearnHtml = () => {
         <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#687eff]   ">
           <p>HTML</p>
         </h1>
-        {
-          HTMLVideos.map((video, index) => (
-            <VideoElement
-              key={index}
-              videoUrl={video.videoUrl}
-              heading={video.heading}
-              mainPoints={video.mainPoints}
-              change={video.change}
-              notesLink={video.notesLink}
-            />
-          ))
-        }
+        {HTMLVideos.map((video, index) => (
+          <VideoElement
+            key={index}
+            videoUrl={video.videoUrl}
+            heading={video.heading}
+            mainPoints={video.mainPoints}
+            notes={video.notes}
+            assignment={video.assignment}
+          />
+        ))}
       </div>
     </div>
   );
