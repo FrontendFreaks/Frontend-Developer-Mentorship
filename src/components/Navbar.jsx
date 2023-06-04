@@ -34,7 +34,7 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="flex flex-row px-10 py-4  items-center justify-between   w-full fixed top-0 bg-[#161616] opacity-80 ">
+    <div className="flex flex-row px-5 md:px-10 py-4  items-center justify-between   w-full fixed top-0 bg-[#161616] opacity-80 ">
       <div className="flex flex-row items-center justify-center space-x-2">
         <h3
           className="text-3xl font-bold md:text-4xl  text-white "
