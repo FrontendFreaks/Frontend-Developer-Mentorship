@@ -13,7 +13,7 @@ const HTMLAssignment = () => {
           number={assignment.number}
           heading={assignment.heading}
           problem={assignment.problem}
-          imageSrc={assignment.imageSrc}
+          link={assignment.link}
         />
       ))}
     </div>

@@ -13,7 +13,7 @@ const JSAssignment = () => {
           number={assignment.number}
           heading={assignment.heading}
           problem={assignment.problem}
-          imageSrc={assignment.imageSrc}
+          linkStatement={assignment.linkStatement}
           link={assignment.link}
         />
       ))}
