@@ -1,7 +1,14 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-const VideoElement = ({ videoUrl, mainPoints, heading, NotesLink }) => {
+const VideoElement = ({
+  videoUrl,
+  mainPoints,
+  heading,
+  notes,
+  assignment,
+  link,
+}) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -9,7 +16,7 @@ const VideoElement = ({ videoUrl, mainPoints, heading, NotesLink }) => {
     });
   };
   return (
-    <div className="flex my-4 flex-col md:flex-row items-start justify-between space-x-4 p-1 space-y-4 md:space-y-0">
+    <div className="flex my-4 flex-col md:flex-row items-start justify-between space-x-0 md:space-x-4 p-1 space-y-4 md:space-y-0">
       <div className="w-full md:w-4/5">
         <ReactPlayer url={videoUrl} width="100%" controls />
       </div>
@@ -30,22 +37,34 @@ const VideoElement = ({ videoUrl, mainPoints, heading, NotesLink }) => {
           </li>
         </ol>
         <div className="flex flex-row items-center justify-start space-x-4 mt-7">
-          <Link
-            to="assignment"
-            className="bg-[#687eff] px-12 py-4  text-white font-bold uppercase"
-            onClick={scrollToTop}
-          >
-            Assignments
-          </Link>
-          {
-            NotesLink && <Link
+          {assignment && (
+            <Link
+              to="assignment"
+              className="bg-[#687eff] px-12 py-4  text-white font-bold uppercase"
+              onClick={scrollToTop}
+            >
+              Assignments
+            </Link>
+          )}
+          {notes && (
+            <Link
               to="notes"
               onClick={scrollToTop}
               className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
             >
               Notes
             </Link>
-          }
+          )}
+          {link && (
+            <a
+              href={link}
+              onClick={scrollToTop}
+              target="_blank"
+              className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
+            >
+              Template
+            </a>
+          )}
         </div>
       </div>
     </div>

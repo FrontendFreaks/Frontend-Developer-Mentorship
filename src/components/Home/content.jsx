@@ -4,25 +4,43 @@ import { FaTools, FaUserGraduate, FaVideo } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 import { RiPencilRuler2Fill } from "react-icons/ri";
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiFillGithub,
+} from "react-icons/ai";
 
 export const aboutText = [
-  "Frontend Freaks empowers individuals to master frontend development through free resources, support, and guidance for a successful journey.",
-  "Learning is continuous; staying updated with evolving frontend trends and technologies is crucial for growth in this field.",
+  "Frontend Freaks empowers individuals to master frontend development through free resources and guidance for a successful journey.",
+  "Continuous and consistent learning, along with staying updated with front-end trends and technologies, are crucial for growth in this field.",
   "Join us today to unleash your potential, sharpen your coding prowess, and create stunning user experiences as a frontend master.",
-]
+];
 
 export const aboutFounderText = [
   "Vishal Rajput, a frontend developer from India, is the driving force behind Frontend Freaks. With a diverse background of working with six startups, Vishal brings a wealth of practical experience to the table.",
   "As a dedicated mentor, Vishal has helped over 3000 students master frontend development, build real-world projects, and make contributions to open source. He takes immense pride in guiding more than 70 students to secure their first jobs in frontend development.",
-  "Vishal's friendly and lighthearted approach sets him apart, making him a valuable asset to the Frontend Freaks community. Join us and benefit from Vishal's expertise as you unleash your frontend superpowers."
+  "Vishal's friendly and lighthearted approach sets him apart, making him a valuable asset to the Frontend Freaks community. Join us and benefit from Vishal's expertise as you unleash your frontend superpowers.",
+  "Join us at Frontend Freaks and let Vishal Rajput guide you on your own path to success in frontend development. Get ready to unleash your frontend superpowers with the guidance of an exceptional mentor!",
 ];
 
 export const founderSocialLinks = [
-  { href: "https://twitter.com/Vishalraj_1", icon: <AiFillTwitterCircle size={45} className="hover:text-[#687eff]" /> },
-  { href: "https://www.linkedin.com/in/vishalraj1/", icon: <AiFillLinkedin size={45} className="hover:text-[#687eff]" /> },
-  { href: "https://www.youtube.com/c/VishalRajput_1", icon: <AiFillYoutube size={50} className="hover:text-[#687eff]" /> },
-  { href: "https://github.com/Vishal-raj-1", icon: <AiFillGithub size={45} className="hover:text-[#687eff]" /> },
+  {
+    href: "https://twitter.com/Vishalraj_1",
+    icon: <AiFillTwitterCircle size={45} className="hover:text-[#687eff]" />,
+  },
+  {
+    href: "https://www.linkedin.com/in/vishalraj1/",
+    icon: <AiFillLinkedin size={45} className="hover:text-[#687eff]" />,
+  },
+  {
+    href: "https://www.youtube.com/c/VishalRajput_1",
+    icon: <AiFillYoutube size={50} className="hover:text-[#687eff]" />,
+  },
+  {
+    href: "https://github.com/Vishal-raj-1",
+    icon: <AiFillGithub size={45} className="hover:text-[#687eff]" />,
+  },
 ];
 
 export const accordionQuestions = [
@@ -38,7 +56,7 @@ export const accordionQuestions = [
     question: "What is Frontend Developer Mentorship? ",
     answer:
       "Frontend Developer Mentorship is our program at Frontend Freaks Community designed to guide newcomers in learning frontend development, building real-world projects, and assisting them in securing internships and jobs.",
-    open: true,
+    open: false,
   },
   {
     id: "03",
@@ -52,14 +70,14 @@ export const accordionQuestions = [
     question: " When can I join?",
     answer:
       "You can join our community at any time! Our courses and resources are self-paced, allowing you to learn at your own convenience. ",
-    open: false,
+    open: true,
   },
   {
     id: "05",
     question: " What types of mentorship do you provide?",
     answer:
       "We offer three batches of mentorship. The first batch is perfect for beginners, covering HTML, CSS, and JavaScript fundamentals through exciting projects. The second batch focuses on mastering ReactJS and building real-world projects. The third batch provides guidance on job hunting, application strategies, and securing referrals.",
-    open: true,
+    open: false,
   },
   {
     id: "06",
