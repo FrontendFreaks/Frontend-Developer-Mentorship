@@ -3,10 +3,10 @@ import { aboutFounderText, founderSocialLinks } from "./content";
 
 const AboutFounder = () => {
   return (
-    <div className="mt-24 py-6 px-5 md:px-20 flex flex-col space-y-12 ">
-      <div className="text-left font-bold text-5xl text-white flex flex-col items-center md:items-start justify-between space-y-3  ">
-        <h1 className="text-center md:text-left"> About the Founder </h1>
-        <div className="w-28 h-2 bg-[#687eff]  rounded"></div>
+    <div className="mt-24 py-6 px-5 md:px-20 flex flex-col space-y-12 items-center justify-center">
+      <div className="text-center font-bold text-5xl text-white flex items-center md:items-start justify-center flex-col space-y-3">
+        <h1>About The Founder</h1>
+        <div className="w-28 h-2 bg-[#687eff] rounded"></div>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-between space-x-2 space-y-8 md:space-y-0">
         <div className="md:1/2 flex flex-col items-between justify-between space-y-3 text-white    ">

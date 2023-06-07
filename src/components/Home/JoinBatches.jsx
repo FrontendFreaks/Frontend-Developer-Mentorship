@@ -15,7 +15,7 @@ const JoinBatches = () => {
       className="mt-24 py-32 px-10 flex flex-col items-center justify-between space-y-8"
       id="join"
     >
-      <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3">
+      <div className="text-left font-bold text-4xl md:text-5xl text-white flex flex-col items-start justify-between space-y-3">
         <h1>Join Batches</h1>
         <div className="w-28 h-2 bg-[#687eff] rounded"></div>
       </div>

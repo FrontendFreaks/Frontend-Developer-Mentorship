@@ -7,8 +7,8 @@ const Features = () => {
       className="mt-24 py-24 px-10 flex flex-col items-center justify-between space-y-12 bg-[#060606]"
       id="features"
     >
-      <div className="text-left font-bold text-5xl text-white flex items-start justify-between flex-col space-y-3">
-        <h1>Features</h1>
+      <div className="text-left font-bold text-5xl text-white flex flex-col items-start justify-between space-y-3  ">
+        <h1> Features </h1>
         <div className="w-28 h-2 bg-[#687eff] rounded"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start justify-between">
