@@ -5,7 +5,7 @@ import { aboutText, aboutSocialLinks } from "./content";
 const About = () => {
   return (
     <div
-      className="mt-20 py-20 px-3 md:px-15 space-y-8 flex flex-col md:flex-row items-start md:items-center justify-between md:space-x-8 md:space-y-0  "
+      className="mt-24 py-24 px-5 md:px-10  space-y-8 flex flex-col md:flex-row items-start md:items-center justify-between md:space-x-8 md:space-y-0  "
       id="about"
     >
       <div className="w-full md:w-1/2  flex flex-col items-center  ">
@@ -26,14 +26,14 @@ const About = () => {
               <p>{text}</p>
             </li>
           ))}
-          <li className="flex flex-row items-start justify-start space-x-3 mt-5 px-8">
+          <li className="flex flex-row items-center justify-start space-x-3 mt-5 px-8">
             {aboutSocialLinks.map((element) => (
               <a
                 href={element.href}
                 target="_blank"
-                className="px-3 text-sm md:px-8 py-3 uppercase  bg-[#687eff] text-white rounded font-bold hover:opacity-80"
+                className="text-sm  uppercase   text-white rounded font-bold hover:opacity-80"
               >
-                {element.name}
+                {element.icon}
               </a>
             ))}
           </li>

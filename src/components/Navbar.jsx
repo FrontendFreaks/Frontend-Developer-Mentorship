@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import { FaLaptopCode } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 
 import { GoThreeBars } from "react-icons/go";
 
@@ -33,7 +33,7 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="flex flex-row px-5 md:px-10 py-4  items-center justify-between  z-50 w-full fixed top-0 bg-[#161616] opacity-80 ">
+    <div className="flex flex-row px-5 md:px-10 py-4  items-center justify-between  z-[300] w-full fixed top-0 bg-[#161616] opacity-80 ">
       <div className="flex flex-row items-center justify-center space-x-2 cursor-pointer">
         <Link to="/">
           <h3
@@ -49,40 +49,41 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hidden  md:flex md:flex-row md:items-center md:justify-between md:space-x-6 ">
-        <p>
-          <Link
-            onClick={() => handleRouteAndSectionChange("/", "#about")}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white hover:text-[#687eff]"
-          >
-            About Us
-          </Link>
-        </p>
-        <p>
-          <a
-            href="#features"
+        <p className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]">
+          <NavLink
+            to="learn"
             onClick={closeMenu}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
+            className={({ isActive }) => (isActive ? "text-[#687eff]" : "")}
           >
-            Features
-          </a>
+            Learn
+          </NavLink>
         </p>
-        <p>
-          <a
-            href="#faqs"
+        <p className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]">
+          <NavLink
+            to="build"
             onClick={closeMenu}
-            className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
+            className={({ isActive }) => (isActive ? "text-[#687eff]" : "")}
           >
-            FAQs
-          </a>
+            Build
+          </NavLink>
         </p>
-
+        <p className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]">
+          <NavLink
+            to="hire"
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? "text-[#687eff]" : "")}
+          >
+            Hire
+          </NavLink>
+        </p>
         <p className="bg-[#687eff] px-12 py-3 rounded-full">
           <a
-            href="#join"
+            href="https://discord.gg/PkKanjX4rt"
             onClick={closeMenu}
+            target="_blank"
             className="uppercase text-md font-bold text-white"
           >
-            Join
+            Join Discord
           </a>
         </p>
       </div>
@@ -107,40 +108,42 @@ const Navbar = () => {
         {menu && (
           <div className="scale-up-center flex justify-end items-start flex-col text-right px-8 py-12 absolute right-0 top-8 mt-4 min-w-52 rounded-md shadow-md z-10 bg-[#060606] ">
             <p className="my-2">
-              <a
-                href="#about"
+              <Link
+                to="learn"
                 onClick={closeMenu}
-                className="uppercase text-md font-bold transition-all duration-200 ease-out text-[#ffffff] hover:text-[#687EFF]"
+                className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
               >
-                About Us
-              </a>
+                Learn
+              </Link>
+            </p>
+            <p className="my-2">
+              <Link
+                to="build"
+                onClick={closeMenu}
+                className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
+              >
+                Build
+              </Link>
+            </p>
+            <p className="my-2">
+              <Link
+                to="hire"
+                onClick={closeMenu}
+                className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
+              >
+                Hire
+              </Link>
             </p>
             <p className="my-2">
               <a
-                href="#features"
+                href="https://discord.gg/PkKanjX4rt"
                 onClick={closeMenu}
-                className="uppercase text-md font-bold transition-all duration-200 ease-out text-[#ffffff] hover:text-[#687EFF]"
+                target="_blank"
+                className="uppercase text-md font-bold text-white bg-[#687EFF] px-12 py-3 rounded my-2"
               >
-                Features
+                Join Discord
               </a>
             </p>
-            <p className="my-2">
-              <a
-                href="#faqs"
-                onClick={closeMenu}
-                className="uppercase text-md font-bold transition-all duration-200 ease-out text-[#ffffff] hover:text-[#687EFF]"
-              >
-                FAQs
-              </a>
-            </p>
-
-            <a
-              href="#join"
-              onClick={closeMenu}
-              className="uppercase text-md font-bold text-white bg-[#687EFF] px-12 py-3 rounded my-2"
-            >
-              Join
-            </a>
           </div>
         )}
       </div>
