@@ -26,7 +26,7 @@ const Assignment = ({
               className="text-[#687eff] text-sm uppercase font-bold mx-3"
               target="_blank"
             >
-              LINK
+              PREVIEW LINK
             </a>
           </div>
         )}
