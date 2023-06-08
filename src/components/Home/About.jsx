@@ -5,7 +5,7 @@ import { aboutText, aboutSocialLinks } from "./content";
 const About = () => {
   return (
     <div
-      className="mt-20 py-20 px-3 md:px-15 space-y-8 flex flex-col md:flex-row items-start md:items-center justify-between md:space-x-8 md:space-y-0  "
+      className="mt-24 py-24 px-5 md:px-10  space-y-8 flex flex-col md:flex-row items-start md:items-center justify-between md:space-x-8 md:space-y-0  "
       id="about"
     >
       <div className="w-full md:w-1/2  flex flex-col items-center  ">

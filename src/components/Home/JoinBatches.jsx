@@ -16,9 +16,7 @@ const JoinBatches = () => {
       id="join"
     >
       <div className="text-left font-bold text-4xl md:text-5xl text-white flex flex-col items-start justify-between space-y-3">
-        <h1>
-          Join <span className="text-[#687eff]">Free </span>Batches
-        </h1>
+        <h1>Join Free Mentorship</h1>
         <div className="w-28 h-2 bg-[#687eff] rounded"></div>
       </div>
       <div className="flex flex-col items-start justify-between space-x-3 md:flex-row">

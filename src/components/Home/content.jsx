@@ -67,15 +67,6 @@ export const aboutSocialLinks = [
   },
 
   {
-    href: "https://github.com/Vishal-raj-1",
-    icon: (
-      <FaGithubSquare
-        size={45}
-        className=" text-white   hover:text-[#687eff]"
-      />
-    ),
-  },
-  {
     href: "https://www.youtube.com/@Vishalraj_1",
     icon: (
       <FaYoutube size={55} className=" text-white   hover:text-[#687eff]" />

@@ -51,15 +51,6 @@ const Navbar = () => {
       <div className="hidden  md:flex md:flex-row md:items-center md:justify-between md:space-x-6 ">
         <p className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]">
           <NavLink
-            to="/#about"
-            onClick={closeMenu}
-            className={({ isActive }) => (isActive ? "text-[#687eff]" : "")}
-          >
-            About Us
-          </NavLink>
-        </p>
-        <p className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]">
-          <NavLink
             to="learn"
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? "text-[#687eff]" : "")}
@@ -85,6 +76,15 @@ const Navbar = () => {
             Hire
           </NavLink>
         </p>
+        <p className="bg-[#687eff] px-12 py-3 rounded-full">
+          <a
+            href="#"
+            onClick={closeMenu}
+            className="uppercase text-md font-bold text-white"
+          >
+            Join Discord
+          </a>
+        </p>
       </div>
       <div className="md:hidden">
         {menu ? (
@@ -106,15 +106,6 @@ const Navbar = () => {
         )}
         {menu && (
           <div className="scale-up-center flex justify-end items-start flex-col text-right px-8 py-12 absolute right-0 top-8 mt-4 min-w-52 rounded-md shadow-md z-10 bg-[#060606] ">
-            <p className="my-2">
-              <Link
-                to="/#about"
-                onClick={closeMenu}
-                className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white hover:text-[#687eff]"
-              >
-                About Us
-              </Link>
-            </p>
             <p className="my-2">
               <Link
                 to="learn"
@@ -141,6 +132,15 @@ const Navbar = () => {
               >
                 Hire
               </Link>
+            </p>
+            <p className="my-2">
+              <a
+                href="#"
+                onClick={closeMenu}
+                className="uppercase text-md font-bold text-white bg-[#687EFF] px-12 py-3 rounded my-2"
+              >
+                Join Discord
+              </a>
             </p>
           </div>
         )}
