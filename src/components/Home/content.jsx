@@ -10,6 +10,7 @@ import {
   AiFillYoutube,
   AiFillGithub,
 } from "react-icons/ai";
+import { renderToString } from "react-dom/server";
 
 export const aboutText = [
   "Frontend Freaks empowers individuals to master frontend development through free resources and guidance for a successful journey.",
@@ -159,3 +160,9 @@ export const batchData = [
     linkTo: "hire",
   },
 ];
+
+const iconString = renderToString(
+  <FaLaptopCode size={40} className="text-white" />
+);
+const iconURL = `data:image/svg+xml,${encodeURIComponent(iconString)}`;
+console.log(iconURL);

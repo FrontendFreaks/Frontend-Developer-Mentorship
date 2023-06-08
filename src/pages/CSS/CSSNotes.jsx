@@ -4,8 +4,8 @@ import NotesSnippet from "../../components/NotesSnippet";
 
 const CSSNotes = () => {
   return (
-    <div className="mt-32 py-6 px-10 ">
-      <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
+    <div className="mt-32 py-6 px-2 md:px-10 ">
+      <h1 className="text-center font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
         <p>CSS Cheatsheet</p>
       </h1>
       <ul className="flex flex-row items-center justify-start space-x-4 uppercase text-md font-bold text-white">
@@ -26,15 +26,13 @@ const CSSNotes = () => {
         <h1 className="text-left font-bold text-3xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
           <p>Basic CSS</p>
         </h1>
-        {
-          CSSBasicNotes.map((element) => (
-            <NotesSnippet
-              heading={element.heading}
-              code={element.code}
-              language="css"
-            />
-          ))
-        }
+        {CSSBasicNotes.map((element) => (
+          <NotesSnippet
+            heading={element.heading}
+            code={element.code}
+            language="css"
+          />
+        ))}
       </div>
       <div
         className="flex flex-col items-start justify-between space-y-4 mt-8 py-24"
@@ -43,15 +41,13 @@ const CSSNotes = () => {
         <h1 className="text-left font-bold text-3xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
           <p>Flexbox</p>
         </h1>
-        {
-          CSSFlexboxNotes.map((element) => (
-            <NotesSnippet
-              heading={element.heading}
-              code={element.code}
-              language="css"
-            />
-          ))
-        }
+        {CSSFlexboxNotes.map((element) => (
+          <NotesSnippet
+            heading={element.heading}
+            code={element.code}
+            language="css"
+          />
+        ))}
       </div>
       <div
         className="flex flex-col items-start justify-between space-y-4 mt-8 py-24"
@@ -63,15 +59,13 @@ const CSSNotes = () => {
         <h1 className="text-left font-bold text-1xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
           <p>1. Grid container properties</p>
         </h1>
-        {
-          CSSGridNotes.map((element) => (
-            <NotesSnippet
-              heading={element.heading}
-              code={element.code}
-              language="css"
-            />
-          ))
-        }
+        {CSSGridNotes.map((element) => (
+          <NotesSnippet
+            heading={element.heading}
+            code={element.code}
+            language="css"
+          />
+        ))}
       </div>
     </div>
   );
