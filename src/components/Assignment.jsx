@@ -14,7 +14,7 @@ const Assignment = ({
   };
   return (
     <div className="p-4 ">
-      <div className="font-bold text-2xl flex flex-row items-end justify-start space-x-3 rounded bg-[#0c0f0a] p-3">
+      <div className="font-bold text-xl md:text-2xl flex flex-row items-start md:items-end justify-start space-x-3 rounded bg-[#0c0f0a] p-3">
         <span className="text-2xl text-[#687eff]  font-bold mx-1 ">
           {number}
         </span>

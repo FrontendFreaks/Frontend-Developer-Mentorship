@@ -57,13 +57,13 @@ export const HTMLAssignments = [
 export const CSSAssignments = [
   {
     number: 1,
-    heading: "Design All Previous  Assignments",
+    heading: "Design Assignments",
     problem:
       "Utilize your CSS expertise to enhance the design of completed assignments by applying various concepts such as syntax, selectors, box model, layout, typography, colors, and backgrounds. To add visual appeal, incorporate two different fonts, two distinct colors, and a background gradient. Employ your creativity to make the best use of CSS properties, resulting in a unique and captivating design.",
   },
   {
     number: 2,
-    heading: "Build Your own Developer Portfolio",
+    heading: " Devfolio",
     problem:
       "Build a responsive portfolio with various sections. Take inspiration from an example portfolio and use HTML and CSS. Include a header with your name or logo, an 'About Me' section highlighting your background and skills, and a dedicated section showcasing your key skills. Present everything in an engaging and visually appealing manner.",
     link: "https://thesujitmemane.vercel.app/",

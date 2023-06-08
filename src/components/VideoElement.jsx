@@ -16,9 +16,9 @@ const VideoElement = ({
     });
   };
   return (
-    <div className="flex my-4 flex-col md:flex-row items-start justify-between space-x-0 md:space-x-4 p-1 space-y-4 md:space-y-0">
+    <div className="flex my-4 flex-col md:flex-row items-start md:items-center justify-between space-x-0 md:space-x-4 p-1 space-y-4 md:space-y-0">
       <div className="w-full md:w-4/5">
-        <ReactPlayer url={videoUrl} width="100%" controls />
+        <ReactPlayer url={videoUrl} width="100% h-40 md:h-full" controls />
       </div>
       <div className="w-full">
         <h1 className=" font-bold text-4xl text-white">{heading}</h1>
@@ -40,7 +40,7 @@ const VideoElement = ({
           {assignment && (
             <Link
               to="assignment"
-              className="bg-[#687eff] px-12 py-4  text-white font-bold uppercase"
+              className="bg-[#687eff] rounded px-8 py-3 md:px-12 md:py-4  text-white font-bold uppercase"
               onClick={scrollToTop}
             >
               Assignments
@@ -50,7 +50,7 @@ const VideoElement = ({
             <Link
               to="notes"
               onClick={scrollToTop}
-              className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
+              className="bg-white rounded px-8 py-3 md:px-12 md:py-4  text-[#687eff] font-bold uppercase"
             >
               Notes
             </Link>
@@ -60,7 +60,7 @@ const VideoElement = ({
               href={link}
               onClick={scrollToTop}
               target="_blank"
-              className="text-[#687eff] px-12 py-3 transition-all duration-200 ease-out  border-[3px] border-[#5557fd] font-bold uppercase hover:bg-[#687eff] hover:text-white"
+              className="bg-[#687eff] rounded px-8 py-3 md:px-12 md:py-4  text-white font-bold uppercase"
             >
               Template
             </a>

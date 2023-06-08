@@ -1,7 +1,7 @@
 import { MdAssignment, MdSpeakerNotes } from "react-icons/md";
 import { BsPeopleFill } from "react-icons/bs";
 import { FaTools, FaUserGraduate, FaVideo } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
+import { FaLaptopCode, FaGithubSquare, FaTwitterSquare } from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 import { RiPencilRuler2Fill } from "react-icons/ri";
 import {
@@ -10,10 +10,11 @@ import {
   AiFillYoutube,
   AiFillGithub,
 } from "react-icons/ai";
+import { renderToString } from "react-dom/server";
 
 export const aboutText = [
   "Frontend Freaks empowers individuals to master frontend development through free resources and guidance for a successful journey.",
-  "Continuous and consistent learning, along with staying updated with front-end trends and technologies, are crucial for growth in this field.",
+
   "Join us today to unleash your potential, sharpen your coding prowess, and create stunning user experiences as a frontend master.",
 ];
 
@@ -40,6 +41,21 @@ export const founderSocialLinks = [
   {
     href: "https://github.com/Vishal-raj-1",
     icon: <AiFillGithub size={45} className="hover:text-[#687eff]" />,
+  },
+];
+
+export const aboutSocialLinks = [
+  {
+    href: "https://twitter.com/frontendfreaks",
+    name: "Twitter",
+  },
+  {
+    href: "https://www.linkedin.com/company/frontendfreaks/",
+    name: "LinkedIn",
+  },
+  {
+    href: "https://www.youtube.com/@Vishalraj_1",
+    name: "Youtube",
   },
 ];
 
@@ -144,3 +160,9 @@ export const batchData = [
     linkTo: "hire",
   },
 ];
+
+const iconString = renderToString(
+  <FaLaptopCode size={40} className="text-white" />
+);
+const iconURL = `data:image/svg+xml,${encodeURIComponent(iconString)}`;
+console.log(iconURL);

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
 import { RiCloseLine } from "react-icons/ri";
-
+import { FaLaptopCode } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
 import { GoThreeBars } from "react-icons/go";
@@ -34,17 +33,20 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="flex flex-row px-5 md:px-10 py-4  items-center justify-between   w-full fixed top-0 bg-[#161616] opacity-80 ">
-      <div className="flex flex-row items-center justify-center space-x-2">
-        <h3
-          className="text-3xl font-bold md:text-4xl  text-white "
-          onClick={scrollToTop}
-        >
-          <Link to="/">
-            <span className="text-[#687eff]">f</span>rontend
-            <span className="text-[#687eff]">f</span>reaks
-          </Link>
-        </h3>
+    <div className="flex flex-row px-5 md:px-10 py-4  items-center justify-between  z-50 w-full fixed top-0 bg-[#161616] opacity-80 ">
+      <div className="flex flex-row items-center justify-center space-x-2 cursor-pointer">
+        <Link to="/">
+          <h3
+            className="text-3xl font-bold md:text-4xl  cursor-pointer text-white flex flex-row items-center justify-center space-x-2 "
+            onClick={scrollToTop}
+          >
+            <FaLaptopCode className="font-normal" />
+            <div>
+              <span className="text-[#687eff]">f</span>rontend
+              <span className="text-[#687eff]">f</span>reaks
+            </div>
+          </h3>
+        </Link>
       </div>
       <div className="hidden  md:flex md:flex-row md:items-center md:justify-between md:space-x-6 ">
         <p>
