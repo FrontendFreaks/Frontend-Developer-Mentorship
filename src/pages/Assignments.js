@@ -159,7 +159,7 @@ export const ReactAssignments = [
   },
   {
     number: 3,
-    heading: "Enhance Todo App",
+    heading: "Modern Todo App",
     problem:
       "Develop a contemporary to-do application using React that incorporates various features such as task editing, task addition, task completion checking, as well as enhancing the app with task manipulation options such as adding, deleting, and marking tasks as complete. Additionally, the application should include task filtering, local storage functionality, and optional drag-and-drop capabilities. The design should be inspired by video aesthetics, offering both light and dark theme options.",
     link: "https://modern-todo-app.vercel.app/",
