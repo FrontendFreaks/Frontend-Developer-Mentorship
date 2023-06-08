@@ -17,13 +17,13 @@ const Hero = () => {
             href="#"
             className="bg-[#687eff] px-12 py-3 transition-all duration-200 ease-out   font-bold uppercase rounded  text-white"
           >
-            Mentorship
+            Join Community
           </a>
           <a
             href="#join"
             className="bg-[#687eff] px-12 py-3  text-white font-bold uppercase rounded"
           >
-            Join
+            Join Batch
           </a>
         </div>
       </div>

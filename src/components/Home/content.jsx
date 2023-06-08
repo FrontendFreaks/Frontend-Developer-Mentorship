@@ -1,7 +1,12 @@
 import { MdAssignment, MdSpeakerNotes } from "react-icons/md";
 import { BsPeopleFill } from "react-icons/bs";
 import { FaTools, FaUserGraduate, FaVideo } from "react-icons/fa";
-import { FaLaptopCode, FaGithubSquare, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaLaptopCode,
+  FaGithubSquare,
+  FaTwitterSquare,
+  FaYoutube,
+} from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 import { RiPencilRuler2Fill } from "react-icons/ri";
 import {
@@ -47,15 +52,34 @@ export const founderSocialLinks = [
 export const aboutSocialLinks = [
   {
     href: "https://twitter.com/frontendfreaks",
-    name: "Twitter",
+    icon: (
+      <FaTwitterSquare size={45} className="text-white hover:text-[#687eff]" />
+    ),
   },
   {
     href: "https://www.linkedin.com/company/frontendfreaks/",
-    name: "LinkedIn",
+    icon: (
+      <AiFillLinkedin
+        size={50}
+        className=" text-white   hover:text-[#687eff]"
+      />
+    ),
+  },
+
+  {
+    href: "https://github.com/Vishal-raj-1",
+    icon: (
+      <FaGithubSquare
+        size={45}
+        className=" text-white   hover:text-[#687eff]"
+      />
+    ),
   },
   {
     href: "https://www.youtube.com/@Vishalraj_1",
-    name: "Youtube",
+    icon: (
+      <FaYoutube size={55} className=" text-white   hover:text-[#687eff]" />
+    ),
   },
 ];
 
@@ -161,8 +185,7 @@ export const batchData = [
   },
 ];
 
-const iconString = renderToString(
-  <FaLaptopCode size={40} className="text-white" />
-);
+const icon = <FaLaptopCode size={40} className="text-[#687eff] " />;
+const iconString = renderToString(icon);
 const iconURL = `data:image/svg+xml,${encodeURIComponent(iconString)}`;
 console.log(iconURL);

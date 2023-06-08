@@ -26,14 +26,14 @@ const About = () => {
               <p>{text}</p>
             </li>
           ))}
-          <li className="flex flex-row items-start justify-start space-x-3 mt-5 px-8">
+          <li className="flex flex-row items-center justify-start space-x-3 mt-5 px-8">
             {aboutSocialLinks.map((element) => (
               <a
                 href={element.href}
                 target="_blank"
-                className="px-3 text-sm md:px-8 py-3 uppercase  bg-[#687eff] text-white rounded font-bold hover:opacity-80"
+                className="text-sm  uppercase   text-white rounded font-bold hover:opacity-80"
               >
-                {element.name}
+                {element.icon}
               </a>
             ))}
           </li>
