@@ -14,7 +14,7 @@ const Hero = () => {
         </h1>
         <div className="flex flex-row items-center justify-start space-x-4">
           <a
-            href=" https://discord.gg/PkKanjX4rt"
+            href=" https://discord.gg/vee94km4Wh"
             target="_blank"
             className="bg-[#687eff] text-sm text-center md:text-lg px-8 py-3 transition-all duration-200 ease-out   font-bold uppercase rounded  text-white"
           >
