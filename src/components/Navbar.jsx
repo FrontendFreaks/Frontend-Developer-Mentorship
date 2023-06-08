@@ -78,8 +78,9 @@ const Navbar = () => {
         </p>
         <p className="bg-[#687eff] px-12 py-3 rounded-full">
           <a
-            href="#"
+            href="https://discord.gg/PkKanjX4rt"
             onClick={closeMenu}
+            target="_blank"
             className="uppercase text-md font-bold text-white"
           >
             Join Discord
@@ -135,8 +136,9 @@ const Navbar = () => {
             </p>
             <p className="my-2">
               <a
-                href="#"
+                href="https://discord.gg/PkKanjX4rt"
                 onClick={closeMenu}
+                target="_blank"
                 className="uppercase text-md font-bold text-white bg-[#687EFF] px-12 py-3 rounded my-2"
               >
                 Join Discord
