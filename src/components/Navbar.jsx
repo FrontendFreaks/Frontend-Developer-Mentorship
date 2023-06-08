@@ -78,7 +78,7 @@ const Navbar = () => {
         </p>
         <p className="bg-[#687eff] px-12 py-3 rounded-full">
           <a
-            href="https://discord.gg/PkKanjX4rt"
+            href="https://discord.gg/vee94km4Wh"
             onClick={closeMenu}
             target="_blank"
             className="uppercase text-md font-bold text-white"
@@ -136,7 +136,7 @@ const Navbar = () => {
             </p>
             <p className="my-2">
               <a
-                href="https://discord.gg/PkKanjX4rt"
+                href="https://discord.gg/vee94km4Wh"
                 onClick={closeMenu}
                 target="_blank"
                 className="uppercase text-md font-bold text-white bg-[#687EFF] px-12 py-3 rounded my-2"
