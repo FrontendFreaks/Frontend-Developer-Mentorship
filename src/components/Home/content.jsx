@@ -18,9 +18,10 @@ import {
 import { renderToString } from "react-dom/server";
 
 export const aboutText = [
-  "Frontend Freaks empowers individuals to master frontend development through free resources and guidance for a successful journey.",
+  "Level up your frontend game with us! Get ready to unleash your inner coding beast as we provide you with a treasure trove of free resources and expert guidance. Together, we'll craft mind-blowing user experiences that will leave everyone in awe.",
 
-  "Join us today to unleash your potential, sharpen your coding prowess, and create stunning user experiences as a frontend master.",
+  "Frontend Freaks ain't your ordinary platform, my friend. It's a vibrant hub of innovation where the coolest and most passionate folks like you come together to break the shackles of web development. We're all about pushing boundaries!",
+
 ];
 
 export const aboutFounderText = [
