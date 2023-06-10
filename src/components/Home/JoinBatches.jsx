@@ -19,7 +19,7 @@ const JoinBatches = () => {
         <h1>Join Free Mentorship</h1>
         <div className="w-28 h-2 bg-[#687eff] rounded"></div>
       </div>
-      <div className="flex flex-col items-start justify-between space-x-3 md:flex-row">
+      <div className="flex flex-col items-start justify-between md:space-x-3 md:flex-row">
         {batchData.map((batch) => (
           <div
             className="flex flex-col items-center justify-between space-y-2 shadow-sm py-10 px-2 w-[380px]"
