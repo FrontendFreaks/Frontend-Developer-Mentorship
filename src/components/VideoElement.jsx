@@ -5,8 +5,7 @@ const VideoElement = ({
   videoUrl,
   mainPoints,
   heading,
-  notes,
-  assignment,
+
   link,
 }) => {
   const scrollToTop = () => {
@@ -16,7 +15,7 @@ const VideoElement = ({
     });
   };
   return (
-    <div className="flex my-4 flex-col md:flex-row items-start md:items-center justify-between space-x-0 md:space-x-4 p-1 space-y-4 md:space-y-0">
+    <div className="flex my-4 flex-col md:flex-row items-start  justify-between space-x-0 md:space-x-4 p-1 space-y-4 md:space-y-0">
       <div className="w-full md:w-4/5">
         <ReactPlayer url={videoUrl} width="100% h-40 md:h-full" controls />
       </div>
@@ -37,24 +36,6 @@ const VideoElement = ({
           </li>
         </ol>
         <div className="flex flex-row items-center justify-start space-x-4 mt-7">
-          {assignment && (
-            <Link
-              to="assignment"
-              className="bg-[#687eff] rounded px-8 py-3 md:px-12 md:py-4  text-white font-bold uppercase"
-              onClick={scrollToTop}
-            >
-              Assignments
-            </Link>
-          )}
-          {notes && (
-            <Link
-              to="notes"
-              onClick={scrollToTop}
-              className="bg-white rounded px-8 py-3 md:px-12 md:py-4  text-[#687eff] font-bold uppercase"
-            >
-              Notes
-            </Link>
-          )}
           {link && (
             <a
               href={link}
