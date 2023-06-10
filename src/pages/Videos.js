@@ -8,8 +8,6 @@ export const HTMLVideos = [
       three:
         "Explore media embedding, semantic tags, and practice HTML through assignments.",
     },
-    assignment: true,
-    notes: true,
   },
 ];
 
@@ -23,8 +21,6 @@ export const CSSVideos = [
       three:
         "Positioning elements with CSS using absolute, relative, fixed, and sticky positioning techniques.",
     },
-    assignment: true,
-    notes: true,
   },
   {
     videoUrl: "https://youtu.be/3nLglJtUHjA",
@@ -35,8 +31,6 @@ export const CSSVideos = [
       three:
         "CSS properties for precise element alignment and sizing: justify-content, align-items, gap, order, flex properties.",
     },
-    assignment: true,
-    notes: true,
   },
   {
     videoUrl: "https://youtu.be/ULp7wPJ-rzQ",
@@ -47,8 +41,6 @@ export const CSSVideos = [
       three:
         "Alignment, spacing, grid lines, areas, and design enhancements with CSS Grid",
     },
-    assignment: true,
-    notes: true,
   },
 ];
 
@@ -62,8 +54,6 @@ export const JavaScriptVideos = [
       three:
         "Functions and Arrays: Working with functions for code organization and arrays for storing and manipulating collections of data.",
     },
-    assignment: true,
-    notes: true,
   },
   {
     videoUrl: "https://youtu.be/85jzHRTVdsc",
@@ -74,8 +64,6 @@ export const JavaScriptVideos = [
       three:
         "HTML DOM: Inner HTML, Inner Text, show/hide card, event listeners, style changes, counter program.",
     },
-    assignment: true,
-    notes: true,
   },
   {
     videoUrl: "https://youtu.be/CVS8CdVrsoc",
@@ -86,8 +74,6 @@ export const JavaScriptVideos = [
       three:
         "Implementing essential features like adding, deleting, and updating notes for a complete website experience.",
     },
-    assignment: true,
-    notes: true,
   },
   {
     videoUrl: "https://youtu.be/lY7j-NBGFHM",
@@ -98,8 +84,6 @@ export const JavaScriptVideos = [
       three:
         "Designing the game's appearance with CSS to enhance the user experience.",
     },
-    assignment: true,
-    notes: false,
   },
   {
     videoUrl: "https://youtu.be/z1LJ_gWwzFs",
@@ -110,8 +94,6 @@ export const JavaScriptVideos = [
       three:
         "Implementation of GitHub user profile card and project cards, leveraging Async & Await for asynchronous operations.",
     },
-    assignment: true,
-    notes: false,
   },
 ];
 
@@ -125,8 +107,6 @@ export const GitVideos = [
       three:
         "GitHub Collaboration: Create, remote, push, contribute via forking, cloning, pull requests.",
     },
-    assignment: true,
-    notes: true,
   },
 ];
 
@@ -140,8 +120,6 @@ export const ReactVideos = [
       three:
         "Gain a strong foundation in ReactJS and be prepared to develop your own applications.",
     },
-    assignment: true,
-    notes: false,
   },
   {
     videoSrc: "https://youtu.be/lLpdRMaDVQc",
@@ -152,8 +130,6 @@ export const ReactVideos = [
       three:
         "Organize components folder, submit assignment, learn conditional rendering, and clear completed tasks.",
     },
-    assignment: true,
-    notes: false,
   },
 
   {
@@ -165,8 +141,6 @@ export const ReactVideos = [
       three:
         "Task 4-10: Implement navigation, buttons, score calculation, timer, and review answer component.",
     },
-    assignment: true,
-    notes: false,
   },
 ];
 
@@ -180,9 +154,6 @@ export const HiredVideos = [
       three:
         "Watch tutorial video: Improve profile and attract employers on LinkedIn.",
     },
-    link: null,
-    assignment: false,
-    notes: false,
   },
 
   {
@@ -194,9 +165,6 @@ export const HiredVideos = [
       three:
         "Method: Set up LinkedIn and AngelList profiles, tailor applications, follow up persistently for offers.",
     },
-    link: null,
-    assignment: false,
-    notes: false,
   },
   {
     videoSrc: "https://www.youtube.com/watch?v=1sUIvJM939c",
@@ -208,7 +176,5 @@ export const HiredVideos = [
         "Remote front-end dev experience through open-source, internships, Overleaf resumes.",
     },
     link: "https://vishal-raj-1.notion.site/vishal-raj-1/How-to-get-remote-jobs-fd519d2236f8454cb6afb21a8143ac38",
-    assignment: false,
-    notes: false,
   },
 ];
