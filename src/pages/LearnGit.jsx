@@ -1,5 +1,5 @@
-import VideoElement from "../../components/VideoElement";
-import { GitVideos } from "../Videos";
+import VideoElement from "../components/VideoElement";
+import { GitVideos } from "./Videos";
 
 const LearnGit = () => {
   return (

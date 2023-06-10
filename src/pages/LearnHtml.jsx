@@ -1,19 +1,19 @@
-import VideoElement from "../../components/VideoElement";
-import { JavaScriptVideos } from "../Videos";
 import { useState } from "react";
-import { JSAssignments } from "../Assignments";
-import Assignment from "../../components/Assignment";
-import NotesSnippet from "../../components/NotesSnippet";
-import { JSBasicNotes, JSDomNotes } from "../Notes";
-
-const LearnJs = () => {
+import VideoElement from "../components/VideoElement";
+import { HTMLVideos } from "./Videos";
+import NotesSnippet from "../components/NotesSnippet";
+import { HTMLBasicNotes } from "./Notes";
+import { HTMLAssignments } from "./Assignments";
+import Assignment from "../components/Assignment";
+const LearnHtml = () => {
   const [currentTab, setCurrentTab] = useState("videos");
   return (
     <div className="mt-32 py-6 px-2 md:px-10 ">
       <div>
-        <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]">
-          <p>JavaScript</p>
+        <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#687eff]   ">
+          <p>HTML</p>
         </h1>
+
         <div className="py-4">
           <div className="flex justify-center">
             <button
@@ -51,13 +51,12 @@ const LearnJs = () => {
 
         {currentTab === "videos" && (
           <div>
-            {JavaScriptVideos.map((video, index) => (
+            {HTMLVideos.map((video, index) => (
               <VideoElement
                 key={index}
                 videoUrl={video.videoUrl}
                 heading={video.heading}
                 mainPoints={video.mainPoints}
-                change={video.change}
                 notes={video.notes}
                 assignment={video.assignment}
               />
@@ -66,43 +65,27 @@ const LearnJs = () => {
         )}
         {currentTab === "assignments" && (
           <div>
-            {JSAssignments.map((assignment) => (
+            {HTMLAssignments.map((assignment) => (
               <Assignment
                 key={assignment.number}
                 number={assignment.number}
                 heading={assignment.heading}
                 problem={assignment.problem}
-                linkStatement={assignment.linkStatement}
                 link={assignment.link}
               />
             ))}
           </div>
         )}
         {currentTab === "notes" && (
-          <div>
-            {JSBasicNotes.map((element, index) => (
+          <div className="flex flex-col items-start justify-between space-y-4">
+            {HTMLBasicNotes.map((element, index) => (
               <NotesSnippet
                 key={index}
-                point={element.point}
                 heading={element.heading}
                 code={element.code}
-                language="js"
+                language="html"
               />
             ))}
-            <div className="flex flex-col items-start justify-between space-y-4 mt-8 py-24">
-              <h1 className="text-left font-bold text-3xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]   ">
-                <p>JS DOM</p>
-              </h1>
-              {JSDomNotes.map((element, index) => (
-                <NotesSnippet
-                  key={index}
-                  point={element.point}
-                  heading={element.heading}
-                  code={element.code}
-                  language="js"
-                />
-              ))}
-            </div>
           </div>
         )}
       </div>
@@ -110,4 +93,4 @@ const LearnJs = () => {
   );
 };
 
-export default LearnJs;
+export default LearnHtml;
