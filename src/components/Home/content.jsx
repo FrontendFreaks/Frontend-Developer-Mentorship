@@ -25,10 +25,9 @@ export const aboutText = [
 ];
 
 export const aboutFounderText = [
-  "Vishal Rajput, a frontend developer from India, is the driving force behind Frontend Freaks. With a diverse background of working with six startups, Vishal brings a wealth of practical experience to the table.",
-  "As a dedicated mentor, Vishal has helped over 3000 students master frontend development, build real-world projects, and make contributions to open source. He takes immense pride in guiding more than 70 students to secure their first jobs in frontend development.",
-  "Vishal's friendly and lighthearted approach sets him apart, making him a valuable asset to the Frontend Freaks community. Join us and benefit from Vishal's expertise as you unleash your frontend superpowers.",
-  "Join us at Frontend Freaks and let Vishal Rajput guide you on your own path to success in frontend development. Get ready to unleash your frontend superpowers with the guidance of an exceptional mentor!",
+  " Step into the world of frontend development with Vishal Rajput, the visionary founder of Frontend Freaks. Hailing from India, Vishal is a seasoned frontend developer who brings a dynamic energy to the table. With a remarkable track record of collaborating with six startups, his practical experience shines through in every aspect of Frontend Freaks.",
+  "As a passionate mentor, Vishal has empowered over 3000 students to conquer frontend development. His guidance has not only helped them master the craft but also provided them with the skills to build real-world projects and contribute to open source. Vishal takes immense pride in the fact that he has played a pivotal role in more than 70 students landing their very first frontend development jobs.",
+  "Are you ready to embark on a transformative frontend development experience? Join Frontend Freaks today and let Vishal Rajput be your guiding light. Get ready to unlock your true frontend potential and unleash your superpowers under the guidance of an exceptional mentor. ",
 ];
 
 export const founderSocialLinks = [
@@ -125,7 +124,7 @@ export const featuresData = [
     icon: <FaUserGraduate size={40} color="#687eff" />,
     title: "Guidance",
     description:
-      "Get guidance in your career and life with the best mentors and experts across the world.",
+      "Level up in life and your career with the guidance of the best mentors and experts around.",
   },
   {
     icon: <FaVideo size={40} color="#687eff" />,
