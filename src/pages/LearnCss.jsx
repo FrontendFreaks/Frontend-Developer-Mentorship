@@ -1,10 +1,10 @@
 import { useState } from "react";
-import VideoElement from "../../components/VideoElement";
-import { CSSVideos } from "../Videos";
-import { CSSBasicNotes, CSSFlexboxNotes, CSSGridNotes } from "../Notes";
-import NotesSnippet from "../../components/NotesSnippet";
-import { CSSAssignments } from "../Assignments";
-import Assignment from "../../components/Assignment";
+import VideoElement from "../components/VideoElement";
+import { CSSVideos } from "./Videos";
+import { CSSBasicNotes, CSSFlexboxNotes, CSSGridNotes } from "./Notes";
+import NotesSnippet from "../components/NotesSnippet";
+import { CSSAssignments } from "./Assignments";
+import Assignment from "../components/Assignment";
 
 const LearnCss = () => {
   const [currentTab, setCurrentTab] = useState("videos");

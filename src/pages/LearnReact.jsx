@@ -1,7 +1,7 @@
-import VideoElement from "../../components/VideoElement";
-import { ReactVideos } from "../Videos";
-import Assignment from "../../components/Assignment";
-import { ReactAssignments } from "../Assignments";
+import VideoElement from "../components/VideoElement";
+import { ReactVideos } from "./Videos";
+import Assignment from "../components/Assignment";
+import { ReactAssignments } from "./Assignments";
 import { useState } from "react";
 
 const LearnReact = () => {
