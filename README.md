@@ -1,5 +1,6 @@
-![Colorful Artificial Intelligence Logo](https://github.com/sujitmemane/Frontend-Developer-Mentorship/assets/114643903/26a846ab-46df-4aa1-ae4d-b20ab5e168ce)
 # Frontend Freaks
+
+![Colorful Artificial Intelligence Logo](https://github.com/sujitmemane/Frontend-Developer-Mentorship/assets/114643903/26a846ab-46df-4aa1-ae4d-b20ab5e168ce)
 
 Welcome to Frontend Freaks, the ultimate destination to level up your frontend development skills! Whether you're a beginner or an experienced developer, we've got you covered with curated tutorials, engaging assignments, and a supportive community.
 
