@@ -48,6 +48,19 @@ const Footer = () => {
             </div>
           </h3>
         </Link>
+        <p className="text-xl text-white font-bold">
+          Find Bug?
+          <a
+            href="https://github.com/Vishal-raj-1/Frontend-Developer-Mentorship"
+            target="_blank"
+            className="
+          text-[#687eff] mx-1
+          hover:underline
+          "
+          >
+            Report an Issue
+          </a>
+        </p>
         <div className="flex flex-row items-center justify-center space-x-3">
           {socialLinks.map((element, index) => (
             <a key={index} href={element.href} target="_blank">
