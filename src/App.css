@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  --webkit-tap-highlight-color: transparent;
 }
 body {
   background: #131313;

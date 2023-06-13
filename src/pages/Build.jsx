@@ -1,7 +1,7 @@
 import React from "react";
 import BatchIntroduction from "../components/BatchIntroduction";
 import StartLearning from "../components/StartLearning";
-import { RiReactjsLine } from "react-icons/ri";
+import { RiReactjsLine, RiQuestionFill } from "react-icons/ri";
 
 const Build = () => {
   const batchHighlights = [
@@ -15,6 +15,11 @@ const Build = () => {
       icon: <RiReactjsLine size={60} color="#687eff" />,
       title: "React JS",
       linkTo: "react",
+    },
+    {
+      icon: <RiQuestionFill size={60} color="#687eff" />,
+      title: "Frontend Interview Questions",
+      linkTo: "interviewqs",
     },
   ];
 
