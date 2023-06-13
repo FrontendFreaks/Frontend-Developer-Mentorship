@@ -18,10 +18,12 @@ const StartLearning = ({ learningData }) => {
         {learningData.map((learn, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-between space-y-2 py-10 px-2 w-[380px] shadow-sm"
+            className="flex flex-col items-center  justify-between space-y-2 py-10 px-2 w-[380px] shadow-sm"
           >
             {learn.icon}
-            <h1 className="uppercase font-bold text-2xl">{learn.title}</h1>
+            <h1 className="uppercase font-bold text-2xl text-center">
+              {learn.title}
+            </h1>
             <Link
               to={learn.linkTo}
               onClick={scrollToTop}
