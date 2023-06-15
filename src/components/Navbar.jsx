@@ -92,7 +92,7 @@ const Navbar = () => {
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? "text-[#687eff]" : "")}
           >
-            Hire
+            Get Hired
           </NavLink>
         </p>
         <p className="bg-[#687eff] px-12 py-3 rounded-full">
@@ -150,7 +150,7 @@ const Navbar = () => {
                 onClick={closeMenu}
                 className="uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[#687eff]"
               >
-                Hire
+                Get Hired
               </Link>
             </p>
             <p className="my-2">
