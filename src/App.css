@@ -123,3 +123,20 @@ body {
 body {
   color: #2d2e32;
 }
+
+input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border-color: white;
+  background-color: white;
+}
