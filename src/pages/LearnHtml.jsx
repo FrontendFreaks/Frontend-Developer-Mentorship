@@ -14,6 +14,8 @@ const LearnHtml = () => {
   const [htmlMcqQuestions, setHtmlMcqQuestions] = useState(htmlMCQQuestions);
   const storedHtmlAssignments = localStorage.getItem("htmlAssignments");
   const [currentPage, setCurrentPage] = useState(0);
+
+  const [completed, setCompleted] = useState(0);
   const itemsPerPage = 3;
 
   const startIndex = currentPage * itemsPerPage;
@@ -31,7 +33,6 @@ const LearnHtml = () => {
   const [htmlAssignments, setHtmlAssignments] = useState(
     initialHtmlAssignments
   );
-  const [completed, setCompleted] = useState(0);
   useEffect(() => {
     localStorage.setItem("htmlAssignments", JSON.stringify(htmlAssignments));
     const filterCompleted = htmlAssignments.filter(
@@ -155,7 +156,7 @@ const LearnHtml = () => {
           </div>
         )}
         {currentTab === "interview" && (
-          <div className="flex flex-col items-start justify-between space-y-4">
+          <div className="flex flex-col items-center justify-between space-y-4">
             {currentHTMLQs.map((element) => (
               <MCQComponent
                 key={element.id}

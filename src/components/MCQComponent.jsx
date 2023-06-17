@@ -19,7 +19,7 @@ const MCQComponent = ({ question, options, answer, onSelect, id }) => {
         {options.map((option, index) => (
           <div
             key={index}
-            className={`px-1 py-2  flex flex-row items-center  ${
+            className={`px-1 py-2  flex flex-row items-center   ${
               selectedOption === option
                 ? isCorrect
                   ? "bg-[#16db65]"
@@ -32,13 +32,13 @@ const MCQComponent = ({ question, options, answer, onSelect, id }) => {
               type="radio"
               id={`option-${question}-${index}`}
               value={option}
-              className="mr-2"
+              className="mr-2 "
               checked={selectedOption === option}
               onChange={() => handleOptionSelect(option)}
             />
             <label
               htmlFor={`option-${question}-${index}`}
-              className="cursor-pointer"
+              className="cursor-pointer  w-full"
             >
               {option}
             </label>

@@ -1,12 +1,29 @@
 import { useState, useEffect } from "react";
 import VideoElement from "../components/VideoElement";
 import { CSSVideos } from "./Videos";
+import ReactPaginate from "react-paginate";
 import { CSSBasicNotes, CSSFlexboxNotes, CSSGridNotes } from "./Notes";
 import NotesSnippet from "../components/NotesSnippet";
 import { CSSAssignments } from "./Assignments";
 import Assignment from "../components/Assignment";
+import { cssMCQQuestions } from "./Questions";
+import MCQComponent from "../components/MCQComponent";
 
 const LearnCss = () => {
+  const [cssMcqQuestions, setCssMcqQuestions] = useState(cssMCQQuestions);
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 3;
+
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentCSSQs = cssMcqQuestions.slice(startIndex, endIndex);
+
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+
+  const pageCount = Math.ceil(cssMcqQuestions.length / itemsPerPage);
+
   const [currentTab, setCurrentTab] = useState("videos");
   const storedCssAssignments = localStorage.getItem("cssAssignments");
   const initialCssAssignments = storedCssAssignments
@@ -47,9 +64,9 @@ const LearnCss = () => {
             ></div>
           </div>
           <div className="py-4">
-            <div className="flex justify-center">
+            <div className="flex justify-center text-xs md:text-sm capitalize">
               <button
-                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "videos"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -59,7 +76,7 @@ const LearnCss = () => {
                 Videos
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "assignments"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -69,7 +86,7 @@ const LearnCss = () => {
                 Assignments
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "notes"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -77,6 +94,16 @@ const LearnCss = () => {
                 onClick={() => setCurrentTab("notes")}
               >
                 Notes
+              </button>
+              <button
+                className={`mr-4 px-4 md:px-8 font-bold py-2 capitalize rounded ${
+                  currentTab === "interview"
+                    ? "text-white  bg-[#687eff]"
+                    : " bg-gray-200 text-[#161616]"
+                }`}
+                onClick={() => setCurrentTab("interview")}
+              >
+                InterviewQs
               </button>
             </div>
           </div>
@@ -170,6 +197,35 @@ const LearnCss = () => {
                   language="css"
                 />
               ))}
+            </div>
+          </div>
+        )}
+        {currentTab === "interview" && (
+          <div className="flex flex-col items-center justify-between space-y-4">
+            {currentCSSQs.map((element) => (
+              <MCQComponent
+                key={element.id}
+                id={element.id}
+                question={element.question}
+                answer={element.answer}
+                options={element.options}
+              />
+            ))}
+            <div className="flex flex-row items-center justify-center mt-8">
+              <ReactPaginate
+                className="flex flex-row space-x-4 px-3 py-2 font-bold text-white "
+                previousLabel={"Prev"}
+                nextLabel={"Next"}
+                pageCount={pageCount}
+                onPageChange={handlePageChange}
+                containerClassName={"pagination"}
+                previousLinkClassName={"pagination__link"}
+                nextLinkClassName={"pagination__link"}
+                disabledClassName={"pagination__link--disabled"}
+                activeClassName={"text-[#6557fd]"}
+                marginPagesDisplayed={1}
+                pageRangeDisplayed={2}
+              />
             </div>
           </div>
         )}
