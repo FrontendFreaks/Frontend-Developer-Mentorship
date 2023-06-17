@@ -2,20 +2,36 @@ import VideoElement from "../components/VideoElement";
 import { ReactVideos } from "./Videos";
 import Assignment from "../components/Assignment";
 import { ReactAssignments } from "./Assignments";
+import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
+import { reactMCQQuestions } from "./Questions";
+import MCQComponent from "../components/MCQComponent";
 
 const LearnReact = () => {
+  const [reactMcqQuestions, setReactMcqQuestions] = useState(reactMCQQuestions);
+  const [currentPage, setCurrentPage] = useState(0);
   const [currentTab, setCurrentTab] = useState("videos");
   const [completed, setCompleted] = useState(0);
+
+  const itemsPerPage = 3;
+
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentReactQs = reactMcqQuestions.slice(startIndex, endIndex);
+
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+
+  const pageCount = Math.ceil(reactMcqQuestions.length / itemsPerPage);
+
   const storedReactAssignments = localStorage.getItem("reactAssignments");
   const initialReactAssignments = storedReactAssignments
     ? JSON.parse(storedReactAssignments)
     : ReactAssignments;
-
   const [reactAssignments, setReactAssignments] = useState(
     initialReactAssignments
   );
-
   useEffect(() => {
     localStorage.setItem("reactAssignments", JSON.stringify(reactAssignments));
     const filterCompleted = reactAssignments.filter(
@@ -71,6 +87,16 @@ const LearnReact = () => {
               >
                 Assignments
               </button>
+              <button
+                className={`mr-4 px-4 md:px-8 font-bold py-2 capitalize rounded ${
+                  currentTab === "interview"
+                    ? "text-white  bg-[#687eff]"
+                    : " bg-gray-200 text-[#161616]"
+                }`}
+                onClick={() => setCurrentTab("interview")}
+              >
+                InterviewQs
+              </button>
             </div>
           </div>
         </div>
@@ -103,6 +129,35 @@ const LearnReact = () => {
                 onUpdate={updateStatusHandler}
               />
             ))}
+          </div>
+        )}
+        {currentTab === "interview" && (
+          <div className="flex flex-col items-center justify-between space-y-4">
+            {currentReactQs.map((element) => (
+              <MCQComponent
+                key={element.id}
+                id={element.id}
+                question={element.question}
+                answer={element.answer}
+                options={element.options}
+              />
+            ))}
+            <div className="flex flex-row items-center justify-center mt-8">
+              <ReactPaginate
+                className="flex flex-row space-x-4 px-3 py-2 font-bold text-white "
+                previousLabel={"Prev"}
+                nextLabel={"Next"}
+                pageCount={pageCount}
+                onPageChange={handlePageChange}
+                containerClassName={"pagination"}
+                previousLinkClassName={"pagination__link"}
+                nextLinkClassName={"pagination__link"}
+                disabledClassName={"pagination__link--disabled"}
+                activeClassName={"text-[#6557fd]"}
+                marginPagesDisplayed={1}
+                pageRangeDisplayed={2}
+              />
+            </div>
           </div>
         )}
       </div>
