@@ -1,13 +1,30 @@
 import { useState, useEffect } from "react";
+import ReactPaginate from "react-paginate";
 import VideoElement from "../components/VideoElement";
 import { HTMLVideos } from "./Videos";
 import NotesSnippet from "../components/NotesSnippet";
 import { HTMLBasicNotes } from "./Notes";
 import { HTMLAssignments } from "./Assignments";
 import Assignment from "../components/Assignment";
+import { htmlMCQQuestions } from "./Questions";
+import MCQComponent from "../components/MCQComponent";
+
 const LearnHtml = () => {
   const [currentTab, setCurrentTab] = useState("videos");
+  const [htmlMcqQuestions, setHtmlMcqQuestions] = useState(htmlMCQQuestions);
   const storedHtmlAssignments = localStorage.getItem("htmlAssignments");
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 3;
+
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentHTMLQs = htmlMcqQuestions.slice(startIndex, endIndex);
+
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+
+  const pageCount = Math.ceil(htmlMcqQuestions.length / itemsPerPage);
   const initialHtmlAssignments = storedHtmlAssignments
     ? JSON.parse(storedHtmlAssignments)
     : HTMLAssignments;
@@ -34,6 +51,9 @@ const LearnHtml = () => {
   };
   const widthColor =
     Math.round((completed / htmlAssignments.length) * 100) + "%";
+  const handleOptionSelect = (option) => {
+    console.log("Selected option:", option);
+  };
   return (
     <div className="mt-32 py-6 px-2 md:px-10 ">
       <div className="flex flex-col items-center justify-center">
@@ -48,9 +68,9 @@ const LearnHtml = () => {
             ></div>
           </div>
           <div className="py-4">
-            <div className="flex justify-center">
+            <div className="flex justify-center text-xs md:text-sm capitalize">
               <button
-                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "videos"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -60,7 +80,7 @@ const LearnHtml = () => {
                 Videos
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "assignments"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -70,7 +90,7 @@ const LearnHtml = () => {
                 Assignments
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "notes"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -78,6 +98,16 @@ const LearnHtml = () => {
                 onClick={() => setCurrentTab("notes")}
               >
                 Notes
+              </button>
+              <button
+                className={`mr-4 px-4 md:px-8 font-bold py-2 capitalize rounded ${
+                  currentTab === "interview"
+                    ? "text-white  bg-[#687eff]"
+                    : " bg-gray-200 text-[#161616]"
+                }`}
+                onClick={() => setCurrentTab("interview")}
+              >
+                InterviewQs
               </button>
             </div>
           </div>
@@ -122,6 +152,36 @@ const LearnHtml = () => {
                 language="html"
               />
             ))}
+          </div>
+        )}
+        {currentTab === "interview" && (
+          <div className="flex flex-col items-start justify-between space-y-4">
+            {currentHTMLQs.map((element) => (
+              <MCQComponent
+                key={element.id}
+                id={element.id}
+                question={element.question}
+                answer={element.answer}
+                options={element.options}
+                onSelect={handleOptionSelect}
+              />
+            ))}
+            <div className="flex flex-row items-center justify-center mt-8">
+              <ReactPaginate
+                className="flex flex-row space-x-4 px-3 py-2 font-bold text-white "
+                previousLabel={"Prev"}
+                nextLabel={"Next"}
+                pageCount={pageCount}
+                onPageChange={handlePageChange}
+                containerClassName={"pagination"}
+                previousLinkClassName={"pagination__link"}
+                nextLinkClassName={"pagination__link"}
+                disabledClassName={"pagination__link--disabled"}
+                activeClassName={"text-[#6557fd]"}
+                marginPagesDisplayed={1}
+                pageRangeDisplayed={2}
+              />
+            </div>
           </div>
         )}
       </div>
