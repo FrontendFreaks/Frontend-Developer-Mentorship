@@ -42,7 +42,7 @@ const LearnReact = () => {
           <p>React Js</p>
         </h1>
 
-        <div className="w-[400px] flex flex-col items-center justify-center">
+        <div className="w-[300px] md:w-[400px] flex flex-col items-center justify-center">
           <div className="border-[#687eff] border-2  h-3 bg-[#161616] w-full flex flex-col justify-center">
             <div
               className="bg-[#687eff] p-1 w-0"
@@ -52,7 +52,7 @@ const LearnReact = () => {
           <div className="py-4">
             <div className="flex justify-center">
               <button
-                className={`mr-4 px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
                   currentTab === "videos"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -62,7 +62,7 @@ const LearnReact = () => {
                 Videos
               </button>
               <button
-                className={`mr-4 px-8 uppercase font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 uppercase font-bold py-3 rounded ${
                   currentTab === "assignments"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"

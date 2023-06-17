@@ -171,10 +171,10 @@ export const batchData = [
   },
   {
     icon: <GiReceiveMoney size={50} color="#687eff" />,
-    title: "Hire",
+    title: "Get Hired",
     linkTo: "hire",
   },
-];
+]
 
 const icon = <FaLaptopCode size={40} className="text-[#687eff] " />;
 const iconString = renderToString(icon);

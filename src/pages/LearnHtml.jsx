@@ -60,7 +60,7 @@ const LearnHtml = () => {
         <h1 className="text-left font-bold text-6xl mb-6  flex items-center justify-center space-x-5 text-[#6557fd]">
           <p> HTML</p>
         </h1>
-        <div className="w-[400px] flex flex-col items-center justify-center">
+        <div className="w-[300px] md:w-[400px] flex flex-col items-center justify-center">
           <div className="border-[#687eff] border-2  h-3 bg-[#161616] w-full flex flex-col justify-center">
             <div
               className="bg-[#687eff] p-1 w-0"
@@ -70,7 +70,7 @@ const LearnHtml = () => {
           <div className="py-4">
             <div className="flex justify-center text-xs md:text-sm capitalize">
               <button
-                className={`mr-4 px-4 md:px-8  font-bold py-3 rounded ${
+                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
                   currentTab === "videos"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"

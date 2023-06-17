@@ -7,6 +7,7 @@ import LearnCss from "./pages/LearnCss";
 import LearnGit from "./pages/LearnGit";
 import LearnJs from "./pages/LearnJs";
 import LearnReact from "./pages/LearnReact";
+import LearnInterviewQs from "./pages/LearnInterviewQs";
 import Hire from "./pages/Hire";
 import Build from "./pages/Build";
 import "./App.css";
@@ -23,7 +24,8 @@ function App() {
           <Route path="learn/css" element={<LearnCss />} />
           <Route path="learn/git" element={<LearnGit />} />
           <Route path="learn/js" element={<LearnJs />} />
-          <Route path="build/react" element={<LearnReact />} />
+          <Route path="build/react" element={<LearnReact />} />{" "}
+          <Route path="build/interviewqs" element={<LearnInterviewQs />} />
         </Route>
       </Routes>
     </BrowserRouter>
