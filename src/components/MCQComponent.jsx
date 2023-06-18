@@ -10,7 +10,7 @@ const MCQComponent = ({ question, options, answer, onSelect, id }) => {
   };
 
   return (
-    <div className=" w-[450px] md:w-[700px] p-3 text-white">
+    <div className=" w-[390px] md:w-[700px] p-3 text-white">
       <h4 className="p-2 bg-[#687eff] text-white font-bold ">
         <span className="mr-1">{id} </span>
         {question}
