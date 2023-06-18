@@ -65,7 +65,7 @@ const LearnJs = () => {
           <div className="py-4">
             <div className="flex justify-center text-xs md:text-sm capitalize">
               <button
-                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
+                className={`mr-4 px-3 md:px-8 font-bold py-3 rounded ${
                   currentTab === "videos"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -75,7 +75,7 @@ const LearnJs = () => {
                 Videos
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
+                className={`mr-4 px-3 md:px-8 font-bold py-3 rounded ${
                   currentTab === "assignments"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -85,7 +85,7 @@ const LearnJs = () => {
                 Assignments
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 font-bold py-3 rounded ${
+                className={`mr-4 px-3 md:px-8 font-bold py-3 rounded ${
                   currentTab === "notes"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
@@ -95,7 +95,7 @@ const LearnJs = () => {
                 Notes
               </button>
               <button
-                className={`mr-4 px-4 md:px-8 font-bold py-2 capitalize rounded ${
+                className={`mr-4 px-3 md:px-8 font-bold py-2 capitalize rounded ${
                   currentTab === "interview"
                     ? "text-white  bg-[#687eff]"
                     : " bg-gray-200 text-[#161616]"
