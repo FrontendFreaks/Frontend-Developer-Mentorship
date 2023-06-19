@@ -25,14 +25,14 @@ const LearnBatch = () => {
       linkTo: "css",
     },
     {
-      icon: <SiJavascript size={60} color="#6557fd" />,
-      title: "JS",
-      linkTo: "js",
-    },
-    {
       icon: <BsGit size={80} color="#6557fd" />,
       title: "Git & GitHub",
       linkTo: "git",
+    },
+    {
+      icon: <SiJavascript size={60} color="#6557fd" />,
+      title: "JS",
+      linkTo: "js",
     },
   ];
 
