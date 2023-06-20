@@ -16,14 +16,12 @@ const Hero = () => {
           <a
             href=" https://discord.gg/vee94km4Wh"
             target="_blank"
-            className="bg-[#687eff] text-sm text-center md:text-lg px-8 py-3 transition-all duration-200 ease-out   font-bold uppercase rounded  text-white"
-          >
+            className="bg-[#687eff] text-sm text-center md:text-lg px-8 py-3 transition-all duration-200 ease-out hover:bg-[#596ddc]   font-bold uppercase rounded  text-white">
             Join Community
           </a>
           <a
             href="#join"
-            className="bg-[#687eff] text-sm text-center md:text-lg px-8 py-3 transition-all duration-200 ease-out   font-bold uppercase rounded  text-white"
-          >
+            className="bg-[#687eff] text-sm text-center md:text-lg px-8 py-3 transition-all duration-200 ease-out hover:bg-[#596ddc]   font-bold uppercase rounded  text-white">
             Join Mentorship
           </a>
         </div>
