@@ -95,7 +95,7 @@ const Navbar = () => {
             Get Hired
           </NavLink>
         </p>
-        <p className="bg-[#687eff] px-12 py-3 rounded-full">
+        <p className="bg-[#687eff] px-12 py-3 rounded-full hover:bg-[#685eff] shadow-md hover:shadow-cyan-500/30">
           <a
             href="https://discord.gg/vee94km4Wh"
             onClick={closeMenu}
