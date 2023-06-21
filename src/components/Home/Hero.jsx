@@ -29,7 +29,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2  p-1 ">
-        <img src={HeroImg} className="w-full " />
+        <img src={HeroImg} className="w-full " alt="Image of a web developer smilling, 
+        wearing a blue shirt and glasses, sitting with a laptop in front of him and a cup of coffee. Code snippets of HTML and CSS floating on the brackground."/>
       </div>
     </div>
   );
