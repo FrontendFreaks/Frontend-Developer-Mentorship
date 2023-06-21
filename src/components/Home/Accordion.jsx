@@ -44,7 +44,7 @@ const Accordion = () => {
           </div>
         </div>
         <div>
-          <img src={FAQ} alt="FAQ" />
+          <img src={FAQ} alt="Cartoon image of two people with a big question mark floating behind them." />
         </div>
       </div>
     </div>
