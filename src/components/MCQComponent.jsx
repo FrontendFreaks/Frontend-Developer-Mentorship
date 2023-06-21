@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const MCQComponent = ({ question, options, answer, onSelect, id }) => {
   const [selectedOption, setSelectedOption] = useState(null);

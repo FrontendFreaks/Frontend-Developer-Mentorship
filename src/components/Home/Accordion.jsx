@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
 import AccordionElement from "./AccordionElement";
 import { accordionQuestions } from "./content";
 import FAQ from "./../../assets/faq.svg";

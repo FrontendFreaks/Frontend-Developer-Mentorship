@@ -20,7 +20,7 @@ const AboutFounder = () => {
           ))}
           <div className="flex flex-row items-center justify-start space-x-3">
             {founderSocialLinks.map((link, index) => (
-              <a key={index} href={link.href} target="_blank">
+              <a key={index} href={link.href} target="_blank" rel="noreferrer">
                 {link.icon}
               </a>
             ))}

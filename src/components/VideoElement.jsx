@@ -1,6 +1,5 @@
-import React from "react";
 import ReactPlayer from "react-player";
-import { Link } from "react-router-dom";
+
 const VideoElement = ({
   videoUrl,
   mainPoints,
@@ -38,6 +37,7 @@ const VideoElement = ({
         <div className="flex flex-row items-center justify-start space-x-4 mt-7">
           {link && (
             <a
+              rel="noreferrer"
               href={link}
               onClick={scrollToTop}
               target="_blank"
