@@ -1,15 +1,14 @@
-import React, { useRef, useState } from "react"
-import { RiCloseLine } from "react-icons/ri"
-import { FaLaptopCode } from "react-icons/fa"
-import { NavLink, Link, useNavigate } from "react-router-dom"
+import { useRef, useState } from "react";
+import { RiCloseLine } from "react-icons/ri";
+import { FaLaptopCode } from "react-icons/fa";
+import { NavLink, Link } from "react-router-dom";
 
-import { GoThreeBars } from "react-icons/go"
-import { useEffect } from "react"
+import { GoThreeBars } from "react-icons/go";
+import { useEffect } from "react";
 
 const Navbar = () => {
-  const navigate = useNavigate()
-  const [menu, setMenu] = useState(false)
-  const menuDropdownRef = useRef(null)
+  const [menu, setMenu] = useState(false);
+  const menuDropdownRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -17,40 +16,33 @@ const Navbar = () => {
         menuDropdownRef.current &&
         !menuDropdownRef.current.contains(e.target)
       ) {
-        setMenu(false)
+        setMenu(false);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   function onClose() {
-    setMenu(false)
+    setMenu(false);
   }
   function onOpen() {
-    setMenu(true)
+    setMenu(true);
   }
   function closeMenu() {
-    setMenu(false)
+    setMenu(false);
   }
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  }
-  const handleRouteAndSectionChange = (route, section) => {
-    navigate(route)
+    });
+  };
 
-    const sectionElement = document.querySelector(section)
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" })
-    }
-  }
   return (
     <div className="flex flex-row px-5 md:px-10 py-4  items-center justify-between  z-[300] w-full fixed top-0 bg-[#161616] opacity-80 ">
       <div className="flex flex-row items-center justify-center space-x-2 cursor-pointer">
@@ -95,11 +87,10 @@ const Navbar = () => {
             Get Hired
           </NavLink>
         </p>
-        <p className="bg-[#687eff] px-12 py-3 rounded-full">
+        <p className="bg-[#687eff] px-12 py-3 rounded-full uppercase text-md font-semibold transition-all duration-200 ease-out text-white  hover:text-[black] ">
           <a
             href="https://discord.gg/vee94km4Wh"
             onClick={closeMenu}
-            target="_blank"
             className="uppercase text-md font-bold text-white"
           >
             Join Discord
@@ -157,8 +148,7 @@ const Navbar = () => {
               <a
                 href="https://discord.gg/vee94km4Wh"
                 onClick={closeMenu}
-                target="_blank"
-                className="uppercase text-md font-bold text-white bg-[#687EFF] px-12 py-3 rounded my-2"
+                className="uppercase text-md font-bold  bg-[#687EFF] px-12 py-3 rounded my-2  text-md  transition-all duration-200 ease-out text-white  hover:text-[black]"
               >
                 Join Discord
               </a>
@@ -167,7 +157,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
