@@ -32,7 +32,7 @@ const JoinBatches = () => {
             <Link
               to={batch.linkTo}
               onClick={scrollToTop}
-              className="bg-[#687eff] rounded px-16 py-3 text-white font-bold uppercase"
+              className="bg-[#687eff] rounded px-16 py-3 text-white font-bold uppercase hover:bg-[#685eff] shadow-lg hover:shadow-cyan-500/30"
             >
               Get Started
             </Link>
