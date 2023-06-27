@@ -19,6 +19,7 @@ const Assignment = ({ number, heading, problem, link, status, onUpdate }) => {
                 href={link}
                 className="text-[#687eff] text-sm uppercase font-bold mx-3"
                 target="_blank"
+                rel="noreferrer"
               >
                 PREVIEW LINK
               </a>

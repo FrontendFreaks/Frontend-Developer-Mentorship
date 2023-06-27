@@ -3,7 +3,6 @@ import { BsPeopleFill } from "react-icons/bs";
 import { FaTools, FaUserGraduate, FaVideo } from "react-icons/fa";
 import {
   FaLaptopCode,
-  FaGithubSquare,
   FaTwitterSquare,
   FaYoutube,
 } from "react-icons/fa";

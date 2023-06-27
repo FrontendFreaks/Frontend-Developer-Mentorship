@@ -32,6 +32,8 @@ const About = () => {
                 href={element.href}
                 target="_blank"
                 className="text-sm  uppercase   text-white rounded font-bold hover:opacity-80"
+                rel="noreferrer"
+                key={aboutSocialLinks.indexOf(element)}
               >
                 {element.icon}
               </a>

@@ -1,4 +1,3 @@
-import React from "react";
 import { GoStar } from "react-icons/go";
 import ReactPlayer from "react-player";
 const BatchIntroduction = ({ batchName, batchIntroVideo, batchHighlights }) => {

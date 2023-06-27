@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
 import AccordionElement from "./AccordionElement";
 import { accordionQuestions } from "./content";
 import FAQ from "./../../assets/faq.svg";
@@ -44,7 +44,7 @@ const Accordion = () => {
           </div>
         </div>
         <div>
-          <img src={FAQ} alt="FAQ" />
+          <img src={FAQ} alt="Cartoon image of two people with a big question mark floating behind them." />
         </div>
       </div>
     </div>

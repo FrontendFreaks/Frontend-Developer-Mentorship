@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -63,7 +62,7 @@ const Footer = () => {
         </p>
         <div className="flex flex-row items-center justify-center space-x-3">
           {socialLinks.map((element, index) => (
-            <a key={index} href={element.href} target="_blank">
+            <a key={index} href={element.href} target="_blank" rel="noreferrer">
               {element.icon}
             </a>
           ))}
