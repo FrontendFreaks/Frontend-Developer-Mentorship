@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import ReactGA from "react-ga4"
 
+
 const measurementID = "G-VWVCP2N7SS"
 ReactGA.initialize(measurementID)
 
