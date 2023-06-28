@@ -27,8 +27,8 @@ const About = () => {
             </li>
           ))}
           <li className="flex flex-row items-center justify-start space-x-3 mt-5 px-8">
-            {aboutSocialLinks.map((element) => (
-              <a
+            {aboutSocialLinks.map((element, index) => (
+              <a key={index}
                 href={element.href}
                 target="_blank"
                 className="text-sm  uppercase   text-white rounded font-bold hover:opacity-80"
